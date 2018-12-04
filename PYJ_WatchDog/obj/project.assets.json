@@ -1,0 +1,1865 @@
+{
+  "version": 3,
+  "targets": {
+    ".NETFramework,Version=v4.6.1": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net46/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net46/CommonServiceLocator.dll": {}
+        }
+      },
+      "ControlzEx/3.0.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ControlzEx.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Dragablz/0.0.3.203": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "MahApps.Metro/1.6.5": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[3.0.2.4, 4.0.0)"
+        },
+        "compile": {
+          "lib/net46/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.dll": {}
+        }
+      },
+      "MaterialDesignColors/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/2.4.1.1101": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.1.2"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.1.0.431",
+          "Unity.Container": "5.8.11"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "ServiceStack/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Client": "5.4.0",
+          "ServiceStack.Common": "5.4.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.dll": {}
+        }
+      },
+      "ServiceStack.Client/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "5.4.0",
+          "ServiceStack.Text": "5.4.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        }
+      },
+      "ServiceStack.Common/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "5.4.0",
+          "ServiceStack.Text": "5.4.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        }
+      },
+      "ServiceStack.Interfaces/5.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ServiceStack.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Interfaces.dll": {}
+        }
+      },
+      "ServiceStack.Text/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      },
+      "Unity.Abstractions/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.8.11": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Abstractions": "3.3.1"
+        },
+        "compile": {
+          "lib/net46/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Unity.Container.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net46/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net46/CommonServiceLocator.dll": {}
+        }
+      },
+      "ControlzEx/3.0.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ControlzEx.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Dragablz/0.0.3.203": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "MahApps.Metro/1.6.5": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[3.0.2.4, 4.0.0)"
+        },
+        "compile": {
+          "lib/net46/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.dll": {}
+        }
+      },
+      "MaterialDesignColors/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/2.4.1.1101": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.1.2"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.1.0.431",
+          "Unity.Container": "5.8.11"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "ServiceStack/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Client": "5.4.0",
+          "ServiceStack.Common": "5.4.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.dll": {}
+        }
+      },
+      "ServiceStack.Client/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "5.4.0",
+          "ServiceStack.Text": "5.4.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        }
+      },
+      "ServiceStack.Common/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "5.4.0",
+          "ServiceStack.Text": "5.4.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        }
+      },
+      "ServiceStack.Interfaces/5.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ServiceStack.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Interfaces.dll": {}
+        }
+      },
+      "ServiceStack.Text/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      },
+      "Unity.Abstractions/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.8.11": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Abstractions": "3.3.1"
+        },
+        "compile": {
+          "lib/net46/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Unity.Container.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x64": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net46/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net46/CommonServiceLocator.dll": {}
+        }
+      },
+      "ControlzEx/3.0.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ControlzEx.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Dragablz/0.0.3.203": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "MahApps.Metro/1.6.5": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[3.0.2.4, 4.0.0)"
+        },
+        "compile": {
+          "lib/net46/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.dll": {}
+        }
+      },
+      "MaterialDesignColors/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/2.4.1.1101": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.1.2"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.1.0.431",
+          "Unity.Container": "5.8.11"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "ServiceStack/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Client": "5.4.0",
+          "ServiceStack.Common": "5.4.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.dll": {}
+        }
+      },
+      "ServiceStack.Client/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "5.4.0",
+          "ServiceStack.Text": "5.4.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        }
+      },
+      "ServiceStack.Common/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "5.4.0",
+          "ServiceStack.Text": "5.4.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        }
+      },
+      "ServiceStack.Interfaces/5.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ServiceStack.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Interfaces.dll": {}
+        }
+      },
+      "ServiceStack.Text/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      },
+      "Unity.Abstractions/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.8.11": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Abstractions": "3.3.1"
+        },
+        "compile": {
+          "lib/net46/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Unity.Container.dll": {}
+        }
+      }
+    },
+    ".NETFramework,Version=v4.6.1/win-x86": {
+      "CommonServiceLocator/2.0.4": {
+        "type": "package",
+        "compile": {
+          "lib/net46/CommonServiceLocator.dll": {}
+        },
+        "runtime": {
+          "lib/net46/CommonServiceLocator.dll": {}
+        }
+      },
+      "ControlzEx/3.0.2.4": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ControlzEx.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ControlzEx.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "Dragablz/0.0.3.203": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Dragablz.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Dragablz.dll": {}
+        }
+      },
+      "log4net/2.0.8": {
+        "type": "package",
+        "compile": {
+          "lib/net45-full/log4net.dll": {}
+        },
+        "runtime": {
+          "lib/net45-full/log4net.dll": {}
+        }
+      },
+      "MahApps.Metro/1.6.5": {
+        "type": "package",
+        "dependencies": {
+          "ControlzEx": "[3.0.2.4, 4.0.0)"
+        },
+        "compile": {
+          "lib/net46/MahApps.Metro.dll": {}
+        },
+        "runtime": {
+          "lib/net46/MahApps.Metro.dll": {}
+        }
+      },
+      "MaterialDesignColors/1.1.2": {
+        "type": "package",
+        "compile": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignColors.dll": {}
+        }
+      },
+      "MaterialDesignThemes/2.4.1.1101": {
+        "type": "package",
+        "dependencies": {
+          "MaterialDesignColors": "1.1.2"
+        },
+        "compile": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/MaterialDesignThemes.Wpf.dll": {}
+        }
+      },
+      "Prism.Core/7.1.0.431": {
+        "type": "package",
+        "compile": {
+          "lib/net45/Prism.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.dll": {}
+        }
+      },
+      "Prism.Unity/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "Prism.Wpf": "7.1.0.431",
+          "Unity.Container": "5.8.11"
+        },
+        "compile": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Unity.Wpf.dll": {}
+        }
+      },
+      "Prism.Wpf/7.1.0.431": {
+        "type": "package",
+        "dependencies": {
+          "CommonServiceLocator": "2.0.4",
+          "Prism.Core": "7.1.0.431"
+        },
+        "frameworkAssemblies": [
+          "System.Configuration"
+        ],
+        "compile": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        },
+        "runtime": {
+          "lib/net45/Prism.Wpf.dll": {},
+          "lib/net45/System.Windows.Interactivity.dll": {}
+        }
+      },
+      "ServiceStack/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Client": "5.4.0",
+          "ServiceStack.Common": "5.4.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.dll": {}
+        }
+      },
+      "ServiceStack.Client/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "5.4.0",
+          "ServiceStack.Text": "5.4.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Client.dll": {}
+        }
+      },
+      "ServiceStack.Common/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "ServiceStack.Interfaces": "5.4.0",
+          "ServiceStack.Text": "5.4.0",
+          "System.ValueTuple": "4.5.0"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Common.dll": {}
+        }
+      },
+      "ServiceStack.Interfaces/5.4.0": {
+        "type": "package",
+        "compile": {
+          "lib/net45/ServiceStack.Interfaces.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Interfaces.dll": {}
+        }
+      },
+      "ServiceStack.Text/5.4.0": {
+        "type": "package",
+        "dependencies": {
+          "System.Memory": "4.5.1"
+        },
+        "compile": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        },
+        "runtime": {
+          "lib/net45/ServiceStack.Text.dll": {}
+        }
+      },
+      "System.Buffers/4.4.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Buffers.dll": {}
+        }
+      },
+      "System.Memory/4.5.1": {
+        "type": "package",
+        "dependencies": {
+          "System.Buffers": "4.4.0",
+          "System.Numerics.Vectors": "4.4.0",
+          "System.Runtime.CompilerServices.Unsafe": "4.5.0"
+        },
+        "compile": {
+          "ref/netstandard2.0/System.Memory.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Memory.dll": {}
+        }
+      },
+      "System.Numerics.Vectors/4.4.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System.Numerics",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net46/_._": {}
+        },
+        "runtime": {
+          "lib/net46/System.Numerics.Vectors.dll": {}
+        }
+      },
+      "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+        "type": "package",
+        "compile": {
+          "ref/netstandard2.0/_._": {}
+        },
+        "runtime": {
+          "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll": {}
+        }
+      },
+      "System.ValueTuple/4.5.0": {
+        "type": "package",
+        "frameworkAssemblies": [
+          "System",
+          "mscorlib"
+        ],
+        "compile": {
+          "ref/net461/System.ValueTuple.dll": {}
+        },
+        "runtime": {
+          "lib/net461/System.ValueTuple.dll": {}
+        }
+      },
+      "Unity.Abstractions/3.3.1": {
+        "type": "package",
+        "compile": {
+          "lib/net46/Unity.Abstractions.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Unity.Abstractions.dll": {}
+        }
+      },
+      "Unity.Container/5.8.11": {
+        "type": "package",
+        "dependencies": {
+          "Unity.Abstractions": "3.3.1"
+        },
+        "compile": {
+          "lib/net46/Unity.Container.dll": {}
+        },
+        "runtime": {
+          "lib/net46/Unity.Container.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "CommonServiceLocator/2.0.4": {
+      "sha512": "YpXfV5l6kv1iQRDfhQnN4RxocbnNehU/rAAS62IlaQUTAKN3WoUbtx9MHwE98Pb09mBemSs4xhVqFhXq27rjxw==",
+      "type": "package",
+      "path": "commonservicelocator/2.0.4",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "commonservicelocator.2.0.4.nupkg.sha512",
+        "commonservicelocator.nuspec",
+        "lib/net40/CommonServiceLocator.dll",
+        "lib/net45/CommonServiceLocator.dll",
+        "lib/net46/CommonServiceLocator.dll",
+        "lib/net47/CommonServiceLocator.dll",
+        "lib/netcoreapp1.0/CommonServiceLocator.dll",
+        "lib/netcoreapp2.0/CommonServiceLocator.dll",
+        "lib/netstandard1.0/CommonServiceLocator.dll",
+        "lib/netstandard2.0/CommonServiceLocator.dll"
+      ]
+    },
+    "ControlzEx/3.0.2.4": {
+      "sha512": "5pgvHE329JDDPwPHCVJe93yxu3CPl2wPh6ma1watUAGjvBtNSMkDcyzvwZcHSryihA/y4Ml3OmDYz9vj7Fg6Xg==",
+      "type": "package",
+      "path": "controlzex/3.0.2.4",
+      "files": [
+        "controlzex.3.0.2.4.nupkg.sha512",
+        "controlzex.nuspec",
+        "lib/net40/ControlzEx.dll",
+        "lib/net40/ControlzEx.pdb",
+        "lib/net40/System.Windows.Interactivity.dll",
+        "lib/net45/ControlzEx.dll",
+        "lib/net45/ControlzEx.pdb",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "lib/net462/ControlzEx.dll",
+        "lib/net462/ControlzEx.pdb",
+        "lib/net462/System.Windows.Interactivity.dll"
+      ]
+    },
+    "Dragablz/0.0.3.203": {
+      "sha512": "bhfclqJCCwQ1MJgFtz2lAIK2xc1yhGLkEenCG4Y+Vt8Tf/7Hn/r64MGH9iEgkEjESOUSKbejs1sKjimepMj56w==",
+      "type": "package",
+      "path": "dragablz/0.0.3.203",
+      "files": [
+        "dragablz.0.0.3.203.nupkg.sha512",
+        "dragablz.nuspec",
+        "lib/net40/Dragablz.XML",
+        "lib/net40/Dragablz.dll",
+        "lib/net40/Dragablz.pdb",
+        "lib/net45/Dragablz.XML",
+        "lib/net45/Dragablz.dll",
+        "lib/net45/Dragablz.pdb",
+        "src/net40/CanvasOrganiser.cs",
+        "src/net40/ContainerCustomisations.cs",
+        "src/net40/Converters/BooleanAndToVisibilityConverter.cs",
+        "src/net40/Converters/EqualityToBooleanConverter.cs",
+        "src/net40/Converters/EqualityToVisibilityConverter.cs",
+        "src/net40/Converters/ShowDefaultCloseButtonConverter.cs",
+        "src/net40/Core/CollectionTeaser.cs",
+        "src/net40/Core/Extensions.cs",
+        "src/net40/Core/FuncComparer.cs",
+        "src/net40/Core/HitTest.cs",
+        "src/net40/Core/InterTabTransfer.cs",
+        "src/net40/Core/MultiComparer.cs",
+        "src/net40/Core/Native.cs",
+        "src/net40/Core/SystemCommand.cs",
+        "src/net40/Core/TabHeaderDragStartInformation.cs",
+        "src/net40/Core/WindowMessage.cs",
+        "src/net40/DefaultInterLayoutClient.cs",
+        "src/net40/DefaultInterTabClient.cs",
+        "src/net40/Dockablz/Branch.cs",
+        "src/net40/Dockablz/BranchAccessor.cs",
+        "src/net40/Dockablz/BranchItem.cs",
+        "src/net40/Dockablz/BranchResult.cs",
+        "src/net40/Dockablz/CouldBeHeaderedStyleSelector.cs",
+        "src/net40/Dockablz/DropZone.cs",
+        "src/net40/Dockablz/DropZoneLocation.cs",
+        "src/net40/Dockablz/Extensions.cs",
+        "src/net40/Dockablz/Finder.cs",
+        "src/net40/Dockablz/FloatRequestedEvent.cs",
+        "src/net40/Dockablz/FloatTransfer.cs",
+        "src/net40/Dockablz/FloatingItemSnapShot.cs",
+        "src/net40/Dockablz/Layout.cs",
+        "src/net40/Dockablz/LayoutAccessor.cs",
+        "src/net40/Dockablz/LocationReport.cs",
+        "src/net40/Dockablz/LocationReportBuilder.cs",
+        "src/net40/Dockablz/LocationReportException.cs",
+        "src/net40/Dockablz/LocationSnapShot.cs",
+        "src/net40/Dockablz/Tiler.cs",
+        "src/net40/Dockablz/TilerCalculator.cs",
+        "src/net40/DragablzColors.cs",
+        "src/net40/DragablzDragCompletedEventArgs.cs",
+        "src/net40/DragablzDragDeltaEventArgs.cs",
+        "src/net40/DragablzDragStartedEventArgs.cs",
+        "src/net40/DragablzIcon.cs",
+        "src/net40/DragablzItem.cs",
+        "src/net40/DragablzItemEventArgs.cs",
+        "src/net40/DragablzItemsControl.cs",
+        "src/net40/DragablzWindow.cs",
+        "src/net40/EmptyHeaderSizingHint.cs",
+        "src/net40/HeaderedDragablzItem.cs",
+        "src/net40/HeaderedItemViewModel.cs",
+        "src/net40/HorizontalOrganiser.cs",
+        "src/net40/HorizontalPositionMonitor.cs",
+        "src/net40/IInterLayoutClient.cs",
+        "src/net40/IInterTabClient.cs",
+        "src/net40/IItemsOrganiser.cs",
+        "src/net40/IManualInterTabClient.cs",
+        "src/net40/INewTabHost.cs",
+        "src/net40/InterTabController.cs",
+        "src/net40/ItemActionCallbackArgs.cs",
+        "src/net40/LocationChangedEventArgs.cs",
+        "src/net40/LocationHint.cs",
+        "src/net40/MoveItemRequest.cs",
+        "src/net40/NewTabHost.cs",
+        "src/net40/OrderChangedEventArgs.cs",
+        "src/net40/PositionMonitor.cs",
+        "src/net40/Properties/AssemblyInfo.cs",
+        "src/net40/Properties/Resources.Designer.cs",
+        "src/net40/Properties/Settings.Designer.cs",
+        "src/net40/Referenceless/AnonymousDisposable.cs",
+        "src/net40/Referenceless/DefaultDisposable.cs",
+        "src/net40/Referenceless/Disposable.cs",
+        "src/net40/Referenceless/ICancelable.cs",
+        "src/net40/Referenceless/SerialDisposable.cs",
+        "src/net40/StackOrganiser.cs",
+        "src/net40/StackPositionMonitor.cs",
+        "src/net40/StoryboardCompletionListener.cs",
+        "src/net40/TabEmptiedResponse.cs",
+        "src/net40/TabablzControl.cs",
+        "src/net40/TabablzHeaderSizeConverter.cs",
+        "src/net40/TabablzItemStyleSelector.cs",
+        "src/net40/Themes/BrushToRadialGradientBrushConverter.cs",
+        "src/net40/Themes/MaterialDesignAssist.cs",
+        "src/net40/Themes/Ripple.cs",
+        "src/net40/Themes/RippleAssist.cs",
+        "src/net40/Themes/SystemCommandIcon.cs",
+        "src/net40/Trapezoid.cs",
+        "src/net40/VerticalOrganiser.cs",
+        "src/net40/VerticalPositionMonitor.cs",
+        "src/net40/obj/Release/GeneratedInternalTypeHelper.g.cs",
+        "src/net45/CanvasOrganiser.cs",
+        "src/net45/ContainerCustomisations.cs",
+        "src/net45/Converters/BooleanAndToVisibilityConverter.cs",
+        "src/net45/Converters/EqualityToBooleanConverter.cs",
+        "src/net45/Converters/EqualityToVisibilityConverter.cs",
+        "src/net45/Converters/ShowDefaultCloseButtonConverter.cs",
+        "src/net45/Core/CollectionTeaser.cs",
+        "src/net45/Core/Extensions.cs",
+        "src/net45/Core/FuncComparer.cs",
+        "src/net45/Core/HitTest.cs",
+        "src/net45/Core/InterTabTransfer.cs",
+        "src/net45/Core/MultiComparer.cs",
+        "src/net45/Core/Native.cs",
+        "src/net45/Core/SystemCommand.cs",
+        "src/net45/Core/TabHeaderDragStartInformation.cs",
+        "src/net45/Core/WindowMessage.cs",
+        "src/net45/DefaultInterLayoutClient.cs",
+        "src/net45/DefaultInterTabClient.cs",
+        "src/net45/Dockablz/Branch.cs",
+        "src/net45/Dockablz/BranchAccessor.cs",
+        "src/net45/Dockablz/BranchItem.cs",
+        "src/net45/Dockablz/BranchResult.cs",
+        "src/net45/Dockablz/CouldBeHeaderedStyleSelector.cs",
+        "src/net45/Dockablz/DropZone.cs",
+        "src/net45/Dockablz/DropZoneLocation.cs",
+        "src/net45/Dockablz/Extensions.cs",
+        "src/net45/Dockablz/Finder.cs",
+        "src/net45/Dockablz/FloatRequestedEvent.cs",
+        "src/net45/Dockablz/FloatTransfer.cs",
+        "src/net45/Dockablz/FloatingItemSnapShot.cs",
+        "src/net45/Dockablz/Layout.cs",
+        "src/net45/Dockablz/LayoutAccessor.cs",
+        "src/net45/Dockablz/LocationReport.cs",
+        "src/net45/Dockablz/LocationReportBuilder.cs",
+        "src/net45/Dockablz/LocationReportException.cs",
+        "src/net45/Dockablz/LocationSnapShot.cs",
+        "src/net45/Dockablz/Tiler.cs",
+        "src/net45/Dockablz/TilerCalculator.cs",
+        "src/net45/DragablzColors.cs",
+        "src/net45/DragablzDragCompletedEventArgs.cs",
+        "src/net45/DragablzDragDeltaEventArgs.cs",
+        "src/net45/DragablzDragStartedEventArgs.cs",
+        "src/net45/DragablzIcon.cs",
+        "src/net45/DragablzItem.cs",
+        "src/net45/DragablzItemEventArgs.cs",
+        "src/net45/DragablzItemsControl.cs",
+        "src/net45/DragablzWindow.cs",
+        "src/net45/EmptyHeaderSizingHint.cs",
+        "src/net45/HeaderedDragablzItem.cs",
+        "src/net45/HeaderedItemViewModel.cs",
+        "src/net45/HorizontalOrganiser.cs",
+        "src/net45/HorizontalPositionMonitor.cs",
+        "src/net45/IInterLayoutClient.cs",
+        "src/net45/IInterTabClient.cs",
+        "src/net45/IItemsOrganiser.cs",
+        "src/net45/IManualInterTabClient.cs",
+        "src/net45/INewTabHost.cs",
+        "src/net45/InterTabController.cs",
+        "src/net45/ItemActionCallbackArgs.cs",
+        "src/net45/LocationChangedEventArgs.cs",
+        "src/net45/LocationHint.cs",
+        "src/net45/MoveItemRequest.cs",
+        "src/net45/NewTabHost.cs",
+        "src/net45/OrderChangedEventArgs.cs",
+        "src/net45/PositionMonitor.cs",
+        "src/net45/Properties/AssemblyInfo.cs",
+        "src/net45/Properties/Resources.Designer.cs",
+        "src/net45/Properties/Settings.Designer.cs",
+        "src/net45/Referenceless/AnonymousDisposable.cs",
+        "src/net45/Referenceless/DefaultDisposable.cs",
+        "src/net45/Referenceless/Disposable.cs",
+        "src/net45/Referenceless/ICancelable.cs",
+        "src/net45/Referenceless/SerialDisposable.cs",
+        "src/net45/StackOrganiser.cs",
+        "src/net45/StackPositionMonitor.cs",
+        "src/net45/StoryboardCompletionListener.cs",
+        "src/net45/TabEmptiedResponse.cs",
+        "src/net45/TabablzControl.cs",
+        "src/net45/TabablzHeaderSizeConverter.cs",
+        "src/net45/TabablzItemStyleSelector.cs",
+        "src/net45/Themes/BrushToRadialGradientBrushConverter.cs",
+        "src/net45/Themes/MaterialDesignAssist.cs",
+        "src/net45/Themes/Ripple.cs",
+        "src/net45/Themes/RippleAssist.cs",
+        "src/net45/Themes/SystemCommandIcon.cs",
+        "src/net45/Trapezoid.cs",
+        "src/net45/VerticalOrganiser.cs",
+        "src/net45/VerticalPositionMonitor.cs",
+        "src/net45/obj/Release/GeneratedInternalTypeHelper.g.cs"
+      ]
+    },
+    "log4net/2.0.8": {
+      "sha512": "N41MQGHZImiCfn0cUuSBjZxrcNfIQCuCgQP0rpgB3J/NWponEh3lc1LxJEuIsPAR9Oc1jVvfkNNFCY1C5hf9LA==",
+      "type": "package",
+      "path": "log4net/2.0.8",
+      "files": [
+        "lib/net20-full/log4net.dll",
+        "lib/net20-full/log4net.xml",
+        "lib/net35-client/log4net.dll",
+        "lib/net35-client/log4net.xml",
+        "lib/net35-full/log4net.dll",
+        "lib/net35-full/log4net.xml",
+        "lib/net40-client/log4net.dll",
+        "lib/net40-client/log4net.xml",
+        "lib/net40-full/log4net.dll",
+        "lib/net40-full/log4net.xml",
+        "lib/net45-full/log4net.dll",
+        "lib/net45-full/log4net.xml",
+        "lib/netstandard1.3/log4net.dll",
+        "log4net.2.0.8.nupkg.sha512",
+        "log4net.nuspec"
+      ]
+    },
+    "MahApps.Metro/1.6.5": {
+      "sha512": "XFxACnPbTAZ9qYcXMqFDLXXEpAbLj3BYaXqwH8NoY0sfSAYepEpE4C53Nd6AI4TnQ+nmDugtO8dwsAXPtt0SXQ==",
+      "type": "package",
+      "path": "mahapps.metro/1.6.5",
+      "files": [
+        "lib/net40/MahApps.Metro.dll",
+        "lib/net40/MahApps.Metro.pdb",
+        "lib/net40/MahApps.Metro.xml",
+        "lib/net45/MahApps.Metro.dll",
+        "lib/net45/MahApps.Metro.pdb",
+        "lib/net45/MahApps.Metro.xml",
+        "lib/net46/MahApps.Metro.dll",
+        "lib/net46/MahApps.Metro.pdb",
+        "lib/net46/MahApps.Metro.xml",
+        "lib/net47/MahApps.Metro.dll",
+        "lib/net47/MahApps.Metro.pdb",
+        "lib/net47/MahApps.Metro.xml",
+        "mahapps.metro.1.6.5.nupkg.sha512",
+        "mahapps.metro.nuspec"
+      ]
+    },
+    "MaterialDesignColors/1.1.2": {
+      "sha512": "UKGf8lKSTJfUjgQwlDMwxFC2IJuUP59AquSF8D02j8V8gCG47B0Zmekd5ycHKrDP515zmbHGFwo6G5mpGVdDuQ==",
+      "type": "package",
+      "path": "materialdesigncolors/1.1.2",
+      "files": [
+        "lib/net45/MaterialDesignColors.dll",
+        "materialdesigncolors.1.1.2.nupkg.sha512",
+        "materialdesigncolors.nuspec"
+      ]
+    },
+    "MaterialDesignThemes/2.4.1.1101": {
+      "sha512": "PQvoBzAryxzpFAQZO+mE3BGHnl3AvSAKcyfTUx1ZU2Ke9rKRrL0eKDO0STO9MGlsziMTXl7Dugc0P+3Z88zN7w==",
+      "type": "package",
+      "path": "materialdesignthemes/2.4.1.1101",
+      "files": [
+        "lib/net45/MaterialDesignThemes.Wpf.XML",
+        "lib/net45/MaterialDesignThemes.Wpf.dll",
+        "lib/net45/MaterialDesignThemes.Wpf.pdb",
+        "materialdesignthemes.2.4.1.1101.nupkg.sha512",
+        "materialdesignthemes.nuspec",
+        "src/net45/Badged.cs",
+        "src/net45/ButtonProgressAssist.cs",
+        "src/net45/Card.cs",
+        "src/net45/Chip.cs",
+        "src/net45/Clock.cs",
+        "src/net45/ClockChoiceMadeEventArgs.cs",
+        "src/net45/ClockItemButton.cs",
+        "src/net45/ColorZone.cs",
+        "src/net45/ColorZoneAssist.cs",
+        "src/net45/ComboBoxAssist.cs",
+        "src/net45/ComboBoxPopup.cs",
+        "src/net45/Converters/BooleanToVisibilityConverter.cs",
+        "src/net45/Converters/BrushRoundConverter.cs",
+        "src/net45/Converters/BrushToRadialGradientBrushConverter.cs",
+        "src/net45/Converters/CalendarDateCoalesceConverter.cs",
+        "src/net45/Converters/CircularProgressBar/ArcEndPointConverter.cs",
+        "src/net45/Converters/CircularProgressBar/ArcSizeConverter.cs",
+        "src/net45/Converters/CircularProgressBar/LargeArcConverter.cs",
+        "src/net45/Converters/CircularProgressBar/LocalEx.cs",
+        "src/net45/Converters/CircularProgressBar/RotateTransformCentreConverter.cs",
+        "src/net45/Converters/CircularProgressBar/RotateTransformConverter.cs",
+        "src/net45/Converters/CircularProgressBar/StartPointConverter.cs",
+        "src/net45/Converters/ClockItemIsCheckedConverter.cs",
+        "src/net45/Converters/ClockLineConverter.cs",
+        "src/net45/Converters/DrawerOffsetConverter.cs",
+        "src/net45/Converters/EqualityToVisibilityConverter.cs",
+        "src/net45/Converters/HintProxyFabricConverter.cs",
+        "src/net45/Converters/ListViewItemContainerStyleConverter.cs",
+        "src/net45/Converters/MathConverter.cs",
+        "src/net45/Converters/MathMultipleConverter.cs",
+        "src/net45/Converters/NotConverter.cs",
+        "src/net45/Converters/NotZeroConverter.cs",
+        "src/net45/Converters/NotZeroToVisibilityConverter.cs",
+        "src/net45/Converters/NullToVisibilityConverter.cs",
+        "src/net45/Converters/NullableDateTimeToCurrentDateConverter.cs",
+        "src/net45/Converters/PointValueConverter.cs",
+        "src/net45/Converters/RangeLengthConverter.cs",
+        "src/net45/Converters/RangePositionConverterConverter.cs",
+        "src/net45/Converters/ShadowConverter.cs",
+        "src/net45/Converters/ShadowEdgeConverter.cs",
+        "src/net45/Converters/ShadowInfo.cs",
+        "src/net45/Converters/SizeToRectConverter.cs",
+        "src/net45/Converters/SnackbarMessageTypeConverter.cs",
+        "src/net45/Converters/TextFieldHintVisibilityConverter.cs",
+        "src/net45/Converters/TimeToVisibilityConverter.cs",
+        "src/net45/CustomPopupPlacementCallbackHelper.cs",
+        "src/net45/DataGridAssist.cs",
+        "src/net45/DateTimeEx.cs",
+        "src/net45/DialogClosingEventArgs.cs",
+        "src/net45/DialogClosingEventHandler.cs",
+        "src/net45/DialogHost.cs",
+        "src/net45/DialogHostEx.cs",
+        "src/net45/DialogOpenedEventArgs.cs",
+        "src/net45/DialogOpenedEventHandler.cs",
+        "src/net45/DialogSession.cs",
+        "src/net45/DpiHelper.cs",
+        "src/net45/DrawerHost.cs",
+        "src/net45/Extensions.cs",
+        "src/net45/Flipper.cs",
+        "src/net45/HintAssist.cs",
+        "src/net45/HintProxyFabric.ComboBox.cs",
+        "src/net45/HintProxyFabric.PasswordBox.cs",
+        "src/net45/HintProxyFabric.TextBox.cs",
+        "src/net45/HintProxyFabric.cs",
+        "src/net45/IHintProxy.cs",
+        "src/net45/ISnackbarMessageQueue.cs",
+        "src/net45/Icon.cs",
+        "src/net45/IconType.cs",
+        "src/net45/ListBoxAssist.cs",
+        "src/net45/ListSortDirectionIndicator.cs",
+        "src/net45/ListViewAssist.cs",
+        "src/net45/MaterialDataGridComboBoxColumn.cs",
+        "src/net45/MaterialDataGridTextColumn.cs",
+        "src/net45/MaterialDateDisplay.cs",
+        "src/net45/MessageQueueExtension.cs",
+        "src/net45/PackIcon.cs",
+        "src/net45/PackIconDataFactory.cs",
+        "src/net45/PackIconExtension.cs",
+        "src/net45/PackIconKind.cs",
+        "src/net45/Palette.cs",
+        "src/net45/PaletteHelper.cs",
+        "src/net45/Plane3D.cs",
+        "src/net45/PopupBox.cs",
+        "src/net45/Properties/AssemblyInfo.cs",
+        "src/net45/Properties/Resources.Designer.cs",
+        "src/net45/Properties/Settings.Designer.cs",
+        "src/net45/RatingBar.cs",
+        "src/net45/RatingBarButton.cs",
+        "src/net45/Ripple.cs",
+        "src/net45/RippleAssist.cs",
+        "src/net45/ScaleHost.cs",
+        "src/net45/Screen.cs",
+        "src/net45/ScrollViewerAssist.cs",
+        "src/net45/ShadowAssist.cs",
+        "src/net45/SmartHint.cs",
+        "src/net45/Snackbar.cs",
+        "src/net45/SnackbarMessage.cs",
+        "src/net45/SnackbarMessageEventArgs.cs",
+        "src/net45/SnackbarMessageQueue.cs",
+        "src/net45/SnackbarMessageQueueItem.cs",
+        "src/net45/Spelling.cs",
+        "src/net45/StringExtensions.cs",
+        "src/net45/TextFieldAssist.cs",
+        "src/net45/TimePicker.cs",
+        "src/net45/ToggleButtonAssist.cs",
+        "src/net45/ToolTipAssist.cs",
+        "src/net45/Transitions/CircleWipe.cs",
+        "src/net45/Transitions/FadeWipe.cs",
+        "src/net45/Transitions/ITransitionEffect.cs",
+        "src/net45/Transitions/ITransitionEffectSubject.cs",
+        "src/net45/Transitions/ITransitionWipe.cs",
+        "src/net45/Transitions/IZIndexController.cs",
+        "src/net45/Transitions/IndexedItemOffsetMultiplierExtension.cs",
+        "src/net45/Transitions/SlideDirection.cs",
+        "src/net45/Transitions/SlideOutWipe.cs",
+        "src/net45/Transitions/SlideWipe.cs",
+        "src/net45/Transitions/TransitionAssist.cs",
+        "src/net45/Transitions/TransitionEffect.cs",
+        "src/net45/Transitions/TransitionEffectBase.cs",
+        "src/net45/Transitions/TransitionEffectExtension.cs",
+        "src/net45/Transitions/TransitionEffectKind.cs",
+        "src/net45/Transitions/TransitionEffectTypeConverter.cs",
+        "src/net45/Transitions/Transitioner.cs",
+        "src/net45/Transitions/TransitionerSlide.cs",
+        "src/net45/Transitions/TransitionerSlideState.cs",
+        "src/net45/Transitions/TransitioningContent.cs",
+        "src/net45/Transitions/TransitioningContentBase.cs",
+        "src/net45/TreeHelper.cs",
+        "src/net45/TreeViewAssist.cs",
+        "src/net45/Underline.cs",
+        "src/net45/ValidationAssist.cs",
+        "src/net45/obj/AppVeyor/GeneratedInternalTypeHelper.g.cs"
+      ]
+    },
+    "Prism.Core/7.1.0.431": {
+      "sha512": "l4sBztXr1d2aJ1Ub5OKcd8dkf18UV7k+DWRbi0uen8y0pqb0tH+OC1/B35ZvaxMNlCtl1VZYbeq6wypdcrt92A==",
+      "type": "package",
+      "path": "prism.core/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.dll",
+        "lib/net45/Prism.pdb",
+        "lib/net45/Prism.xml",
+        "lib/netstandard1.0/Prism.dll",
+        "lib/netstandard1.0/Prism.pdb",
+        "lib/netstandard1.0/Prism.xml",
+        "lib/netstandard2.0/Prism.dll",
+        "lib/netstandard2.0/Prism.pdb",
+        "lib/netstandard2.0/Prism.xml",
+        "lib/uap10.0.15063/Prism.dll",
+        "lib/uap10.0.15063/Prism.pdb",
+        "lib/uap10.0.15063/Prism.pri",
+        "lib/uap10.0.15063/Prism.xml",
+        "lib/uap10.0.16299/Prism.dll",
+        "lib/uap10.0.16299/Prism.pdb",
+        "lib/uap10.0.16299/Prism.pri",
+        "lib/uap10.0.16299/Prism.xml",
+        "prism.core.7.1.0.431.nupkg.sha512",
+        "prism.core.nuspec"
+      ]
+    },
+    "Prism.Unity/7.1.0.431": {
+      "sha512": "75yEnHlm85zqmksOP3AJIGL7T+eyeo4zNje3pqJLs3KgeIewVC1ShtyuVF7EOfETqmGPL4wyO7acwOXXKE2ouw==",
+      "type": "package",
+      "path": "prism.unity/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.Unity.Wpf.dll",
+        "lib/net45/Prism.Unity.Wpf.pdb",
+        "lib/net45/Prism.Unity.Wpf.xml",
+        "prism.unity.7.1.0.431.nupkg.sha512",
+        "prism.unity.nuspec"
+      ]
+    },
+    "Prism.Wpf/7.1.0.431": {
+      "sha512": "vcSet3jJxN4Ypf4GLPHvIYz3xQJV1E1e+uTJrsw6FkZd0mrjc0vUTZciQ3PoMRzGr5pf3iktMtScmCQhBJZMIw==",
+      "type": "package",
+      "path": "prism.wpf/7.1.0.431",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net45/Prism.Wpf.dll",
+        "lib/net45/Prism.Wpf.pdb",
+        "lib/net45/Prism.Wpf.xml",
+        "lib/net45/System.Windows.Interactivity.dll",
+        "prism.wpf.7.1.0.431.nupkg.sha512",
+        "prism.wpf.nuspec"
+      ]
+    },
+    "ServiceStack/5.4.0": {
+      "sha512": "KnVcEmDjV15zqTp5IXVyYqfgAksG+1nT4mS/NnTvJFvnFp1eqjZ/qxuMn1Dqc1+WUHWFgVZdMJd+37FyGDH2Sg==",
+      "type": "package",
+      "path": "servicestack/5.4.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/ServiceStack.dll",
+        "lib/net45/ServiceStack.xml",
+        "lib/netstandard2.0/ServiceStack.dll",
+        "lib/netstandard2.0/ServiceStack.xml",
+        "servicestack.5.4.0.nupkg.sha512",
+        "servicestack.nuspec"
+      ]
+    },
+    "ServiceStack.Client/5.4.0": {
+      "sha512": "xURGb5zVsEJ3/7fYU8AvZO/JPwV1uA3G2JL5CV+kT0N1JkW7z2/rIYd7Azm1iVf2S/MGklI2rzw64kagyyJjwA==",
+      "type": "package",
+      "path": "servicestack.client/5.4.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/ServiceStack.Client.dll",
+        "lib/net45/ServiceStack.Client.xml",
+        "lib/netstandard2.0/ServiceStack.Client.deps.json",
+        "lib/netstandard2.0/ServiceStack.Client.dll",
+        "lib/netstandard2.0/ServiceStack.Client.xml",
+        "servicestack.client.5.4.0.nupkg.sha512",
+        "servicestack.client.nuspec"
+      ]
+    },
+    "ServiceStack.Common/5.4.0": {
+      "sha512": "NgVuMxJH/+MP/0mf/T9wn8lhw2BNgf17/rdh34vG9cVBzCrkgE05gnk31hN8yGQuGVJJG4QzRPKRno2OVib9hw==",
+      "type": "package",
+      "path": "servicestack.common/5.4.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/ServiceStack.Common.dll",
+        "lib/net45/ServiceStack.Common.xml",
+        "lib/netstandard2.0/ServiceStack.Common.deps.json",
+        "lib/netstandard2.0/ServiceStack.Common.dll",
+        "lib/netstandard2.0/ServiceStack.Common.xml",
+        "servicestack.common.5.4.0.nupkg.sha512",
+        "servicestack.common.nuspec"
+      ]
+    },
+    "ServiceStack.Interfaces/5.4.0": {
+      "sha512": "9IxP5yGu1NyHlbkWEBDDnYUMSWXCAES7vW4CAKsIYzQxwoXoMlQc6ZpFTz6BQgCypQ1K2VG/uqpMPP9nxLVSbg==",
+      "type": "package",
+      "path": "servicestack.interfaces/5.4.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/ServiceStack.Interfaces.dll",
+        "lib/net45/ServiceStack.Interfaces.xml",
+        "lib/netstandard2.0/ServiceStack.Interfaces.deps.json",
+        "lib/netstandard2.0/ServiceStack.Interfaces.dll",
+        "lib/netstandard2.0/ServiceStack.Interfaces.xml",
+        "servicestack.interfaces.5.4.0.nupkg.sha512",
+        "servicestack.interfaces.nuspec"
+      ]
+    },
+    "ServiceStack.Text/5.4.0": {
+      "sha512": "piyHU0ZdUkWhmyHdrfyOAdMdMiU/6YKDMSbzvx/8w9FvUUgY0bFemQjh2J/y9Gj6mA2XuATPADtOjzjnBipVfQ==",
+      "type": "package",
+      "path": "servicestack.text/5.4.0",
+      "files": [
+        ".signature.p7s",
+        "lib/net45/ServiceStack.Text.dll",
+        "lib/net45/ServiceStack.Text.xml",
+        "lib/netcoreapp2.1/ServiceStack.Text.deps.json",
+        "lib/netcoreapp2.1/ServiceStack.Text.dll",
+        "lib/netcoreapp2.1/ServiceStack.Text.xml",
+        "lib/netstandard2.0/ServiceStack.Text.deps.json",
+        "lib/netstandard2.0/ServiceStack.Text.dll",
+        "lib/netstandard2.0/ServiceStack.Text.xml",
+        "servicestack.text.5.4.0.nupkg.sha512",
+        "servicestack.text.nuspec"
+      ]
+    },
+    "System.Buffers/4.4.0": {
+      "sha512": "VCJfpWcYG1gT3WwivZWgT0KaqY678MQBvrOI2si6V8GHeQOtuW+wpiv5ss4KyfGG+cFFdPNaI+nw2/kExCtGgQ==",
+      "type": "package",
+      "path": "system.buffers/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.1/System.Buffers.dll",
+        "lib/netstandard1.1/System.Buffers.xml",
+        "lib/netstandard2.0/System.Buffers.dll",
+        "lib/netstandard2.0/System.Buffers.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.1/System.Buffers.dll",
+        "ref/netstandard1.1/System.Buffers.xml",
+        "ref/netstandard2.0/System.Buffers.dll",
+        "ref/netstandard2.0/System.Buffers.xml",
+        "system.buffers.4.4.0.nupkg.sha512",
+        "system.buffers.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Memory/4.5.1": {
+      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
+      "type": "package",
+      "path": "system.memory/4.5.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.1/_._",
+        "lib/netstandard1.1/System.Memory.dll",
+        "lib/netstandard1.1/System.Memory.xml",
+        "lib/netstandard2.0/System.Memory.dll",
+        "lib/netstandard2.0/System.Memory.xml",
+        "ref/netcoreapp2.1/_._",
+        "ref/netstandard1.1/System.Memory.dll",
+        "ref/netstandard1.1/System.Memory.xml",
+        "ref/netstandard2.0/System.Memory.dll",
+        "ref/netstandard2.0/System.Memory.xml",
+        "system.memory.4.5.1.nupkg.sha512",
+        "system.memory.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Numerics.Vectors/4.4.0": {
+      "sha512": "ZhdgJiihSOGD325jClouHy8WSPtwFSj6K1OymoEyN0Wc9Y6X2OVxn65VKfTWHQOYM+QljlVSreporVNvZm8rEA==",
+      "type": "package",
+      "path": "system.numerics.vectors/4.4.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net46/System.Numerics.Vectors.dll",
+        "lib/net46/System.Numerics.Vectors.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.Numerics.Vectors.dll",
+        "lib/netstandard1.0/System.Numerics.Vectors.xml",
+        "lib/netstandard2.0/System.Numerics.Vectors.dll",
+        "lib/netstandard2.0/System.Numerics.Vectors.xml",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.dll",
+        "lib/portable-net45+win8+wp8+wpa81/System.Numerics.Vectors.xml",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net46/System.Numerics.Vectors.dll",
+        "ref/net46/System.Numerics.Vectors.xml",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard1.0/System.Numerics.Vectors.dll",
+        "ref/netstandard1.0/System.Numerics.Vectors.xml",
+        "ref/netstandard2.0/System.Numerics.Vectors.dll",
+        "ref/netstandard2.0/System.Numerics.Vectors.xml",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.numerics.vectors.4.4.0.nupkg.sha512",
+        "system.numerics.vectors.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.Runtime.CompilerServices.Unsafe/4.5.0": {
+      "sha512": "+XuFKlQaEBZXzJLGYXK2RWSif4doDGol46fJHHt1wwWQoHQHr0iwlmF76U2LlssIp3ZPJgCVVueY620y6JEhqw==",
+      "type": "package",
+      "path": "system.runtime.compilerservices.unsafe/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netcoreapp2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "lib/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "lib/uap10.0.16300/_._",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard1.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.dll",
+        "ref/netstandard2.0/System.Runtime.CompilerServices.Unsafe.xml",
+        "ref/uap10.0.16300/_._",
+        "system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+        "system.runtime.compilerservices.unsafe.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "System.ValueTuple/4.5.0": {
+      "sha512": "hSj6CqoOYTKB+j3V+UtFdxpZWUff/VuSWJ5VaIsyjg3/h5zVphvYs2jwMVCAJaYyjnddOOWJukgdPcPhFUNtPw==",
+      "type": "package",
+      "path": "system.valuetuple/4.5.0",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "LICENSE.TXT",
+        "THIRD-PARTY-NOTICES.TXT",
+        "lib/MonoAndroid10/_._",
+        "lib/MonoTouch10/_._",
+        "lib/net461/System.ValueTuple.dll",
+        "lib/net461/System.ValueTuple.xml",
+        "lib/net47/System.ValueTuple.dll",
+        "lib/net47/System.ValueTuple.xml",
+        "lib/netcoreapp2.0/_._",
+        "lib/netstandard1.0/System.ValueTuple.dll",
+        "lib/netstandard1.0/System.ValueTuple.xml",
+        "lib/netstandard2.0/_._",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "lib/portable-net40+sl4+win8+wp8/System.ValueTuple.xml",
+        "lib/uap10.0.16299/_._",
+        "lib/xamarinios10/_._",
+        "lib/xamarinmac20/_._",
+        "lib/xamarintvos10/_._",
+        "lib/xamarinwatchos10/_._",
+        "ref/MonoAndroid10/_._",
+        "ref/MonoTouch10/_._",
+        "ref/net461/System.ValueTuple.dll",
+        "ref/net47/System.ValueTuple.dll",
+        "ref/netcoreapp2.0/_._",
+        "ref/netstandard2.0/_._",
+        "ref/portable-net40+sl4+win8+wp8/System.ValueTuple.dll",
+        "ref/uap10.0.16299/_._",
+        "ref/xamarinios10/_._",
+        "ref/xamarinmac20/_._",
+        "ref/xamarintvos10/_._",
+        "ref/xamarinwatchos10/_._",
+        "system.valuetuple.4.5.0.nupkg.sha512",
+        "system.valuetuple.nuspec",
+        "useSharedDesignerContext.txt",
+        "version.txt"
+      ]
+    },
+    "Unity.Abstractions/3.3.1": {
+      "sha512": "2dFFUnyzSHDgyqVeZBo4X1M3mxh+XCdK66aiuALuPWwXsqmGuGfqD0/sbDNnA5FGYnqby4Fb+4X/JqoN+NjhuA==",
+      "type": "package",
+      "path": "unity.abstractions/3.3.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Abstractions.dll",
+        "lib/net45/Unity.Abstractions.dll",
+        "lib/net46/Unity.Abstractions.dll",
+        "lib/net47/Unity.Abstractions.dll",
+        "lib/netcoreapp1.0/Unity.Abstractions.dll",
+        "lib/netcoreapp2.0/Unity.Abstractions.dll",
+        "lib/netstandard1.0/Unity.Abstractions.dll",
+        "lib/netstandard2.0/Unity.Abstractions.dll",
+        "unity.abstractions.3.3.1.nupkg.sha512",
+        "unity.abstractions.nuspec"
+      ]
+    },
+    "Unity.Container/5.8.11": {
+      "sha512": "8XEfzRwoX/9NtHU4WapD3DdCxBQumIoDIIEBbqElhr2Y5HwokaAkiomuIKvVW9znNDtv1az3i1xKM6usiiWjqg==",
+      "type": "package",
+      "path": "unity.container/5.8.11",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "lib/net40/Unity.Container.dll",
+        "lib/net45/Unity.Container.dll",
+        "lib/net46/Unity.Container.dll",
+        "lib/net47/Unity.Container.dll",
+        "lib/netcoreapp1.0/Unity.Container.dll",
+        "lib/netcoreapp2.0/Unity.Container.dll",
+        "lib/netstandard1.0/Unity.Container.dll",
+        "lib/netstandard2.0/Unity.Container.dll",
+        "unity.container.5.8.11.nupkg.sha512",
+        "unity.container.nuspec"
+      ]
+    }
+  },
+  "projectFileDependencyGroups": {
+    ".NETFramework,Version=v4.6.1": [
+      "Dragablz >= 0.0.3.203",
+      "MahApps.Metro >= 1.6.5",
+      "MaterialDesignThemes >= 2.4.1.1101",
+      "Prism.Unity >= 7.1.0.431",
+      "ServiceStack >= 5.4.0",
+      "log4net >= 2.0.8"
+    ]
+  },
+  "packageFolders": {
+    "C:\\Users\\SISUSER\\.nuget\\packages\\": {}
+  },
+  "project": {
+    "version": "1.0.0",
+    "restore": {
+      "projectUniqueName": "C:\\Users\\SISUSER\\Downloads\\PYJ_WatchDog\\PYJ_WatchDog\\PYJ_WatchDog.csproj",
+      "projectName": "PYJ_WatchDog",
+      "projectPath": "C:\\Users\\SISUSER\\Downloads\\PYJ_WatchDog\\PYJ_WatchDog\\PYJ_WatchDog.csproj",
+      "packagesPath": "C:\\Users\\SISUSER\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\SISUSER\\Downloads\\PYJ_WatchDog\\PYJ_WatchDog\\obj\\",
+      "projectStyle": "PackageReference",
+      "skipContentFileWrite": true,
+      "configFilePaths": [
+        "C:\\Users\\SISUSER\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
+      ],
+      "originalTargetFrameworks": [
+        "net461"
+      ],
+      "sources": {
+        "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "http://nuget.grapecity.com/nuget": {},
+        "https://api.nuget.org/v3/index.json": {}
+      },
+      "frameworks": {
+        "net461": {
+          "projectReferences": {}
+        }
+      }
+    },
+    "frameworks": {
+      "net461": {
+        "dependencies": {
+          "Dragablz": {
+            "target": "Package",
+            "version": "[0.0.3.203, )"
+          },
+          "MahApps.Metro": {
+            "target": "Package",
+            "version": "[1.6.5, )"
+          },
+          "MaterialDesignThemes": {
+            "target": "Package",
+            "version": "[2.4.1.1101, )"
+          },
+          "Prism.Unity": {
+            "target": "Package",
+            "version": "[7.1.0.431, )"
+          },
+          "ServiceStack": {
+            "target": "Package",
+            "version": "[5.4.0, )"
+          },
+          "log4net": {
+            "target": "Package",
+            "version": "[2.0.8, )"
+          }
+        }
+      }
+    },
+    "runtimes": {
+      "win": {
+        "#import": []
+      },
+      "win-x64": {
+        "#import": []
+      },
+      "win-x86": {
+        "#import": []
+      }
+    }
+  }
+}

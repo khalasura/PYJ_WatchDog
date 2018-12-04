@@ -1,0 +1,94 @@
+﻿<controls:MetroWindow x:Class="PYJ_WatchDog.Views.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:prism="http://prismlibrary.com/"
+        xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+        xmlns:dragablz="clr-namespace:Dragablz;assembly=Dragablz"
+        xmlns:view="clr-namespace:PYJ_WatchDog.Views"
+        xmlns:dockablz="clr-namespace:Dragablz.Dockablz;assembly=Dragablz"     
+        xmlns:wpf="http://materialdesigninxaml.net/winfx/xaml/themes"      
+        WindowTransitionsEnabled="False"
+        TextElement.Foreground="{DynamicResource MaterialDesignBody}"
+        Background="{DynamicResource MaterialDesignPaper}"					  
+        GlowBrush="{DynamicResource AccentColorBrush}"					  
+        FontFamily="{StaticResource DefaultFont}"                      
+        xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+        prism:ViewModelLocator.AutoWireViewModel="True"
+        Width="800" Height="600"
+        WindowStartupLocation="CenterScreen"
+        BorderBrush="{DynamicResource AccentColorBrush}" BorderThickness="5">
+
+    <controls:MetroWindow.Resources>
+
+    </controls:MetroWindow.Resources>
+
+    <controls:MetroWindow.LeftWindowCommands>
+        <controls:WindowCommands ShowSeparators="False">
+            <DockPanel VerticalAlignment="Center" HorizontalAlignment="Center">
+                <wpf:PackIcon Kind="EyePlus" HorizontalAlignment="Center" Width="20" Height="20" Margin="5 0 0 0"/>
+                <TextBlock Text="{Binding Title}" FontSize="15" FontWeight="DemiBold" Margin="5 0 0 0" Foreground="{DynamicResource IdealForegroundColorBrush}" />
+            </DockPanel>
+        </controls:WindowCommands>
+    </controls:MetroWindow.LeftWindowCommands>
+    
+    <i:Interaction.Triggers>
+        <i:EventTrigger>
+            <prism:InvokeCommandAction Command="{Binding LoadedCommand}"/>
+        </i:EventTrigger>
+    </i:Interaction.Triggers>
+
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*" />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <dockablz:Layout>
+            <dragablz:TabablzControl BorderThickness="0" ConsolidateOrphanedItems="True"
+                                 Margin="0,-1,0,1">
+                <dragablz:TabablzControl.InterTabController>
+                    <dragablz:InterTabController />
+                </dragablz:TabablzControl.InterTabController>
+                <TabItem Header="MONITOR">
+                    <view:MonitorWindow Margin="16" />
+                </TabItem>
+                <TabItem Header="LOG">
+                    <view:LogWindow Margin="16" />
+                </TabItem>
+            </dragablz:TabablzControl>
+        </dockablz:Layout>
+        <StatusBar Grid.Row="1">
+            <StatusBar.ItemsPanel>
+                <ItemsPanelTemplate>
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="*" />
+                            <ColumnDefinition Width="Auto" />
+                            <ColumnDefinition Width="150" />
+                        </Grid.ColumnDefinitions>
+                    </Grid>
+                </ItemsPanelTemplate>
+            </StatusBar.ItemsPanel>
+            <!--  자동틱  -->
+            <StatusBarItem Grid.Column="0" HorizontalAlignment="Left">
+                <TextBlock HorizontalAlignment="Center" Text="{Binding PbVal}" />
+            </StatusBarItem>
+            <!--  자동 틱 프로그레스  -->
+            <StatusBarItem Grid.Column="1" HorizontalAlignment="Left">
+                <ProgressBar IsIndeterminate="{Binding IsAuto}" Value="{Binding PbVal}" Maximum="{Binding PbMax}" Width="100" Height="10"
+                                 Background="{DynamicResource AccentColorBrush}" Foreground="{DynamicResource AccentColorBrush4}"/>
+            </StatusBarItem>
+            <!--  선택된 Task  -->
+            <StatusBarItem Grid.Column="1" HorizontalAlignment="Right">
+                <TextBlock Text="{Binding SelName}"/>
+            </StatusBarItem>
+            <!--  시간  -->
+            <StatusBarItem Grid.Column="3" HorizontalAlignment="Center">
+                <TextBlock Text="{Binding CurrentTime, ConverterCulture='ko-KR', StringFormat=yyyy/MM/dd HH:mm:ss}"/>
+            </StatusBarItem>
+        </StatusBar>
+    </Grid>
+</controls:MetroWindow>

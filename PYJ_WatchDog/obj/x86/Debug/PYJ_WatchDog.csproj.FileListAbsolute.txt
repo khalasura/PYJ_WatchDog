@@ -1,0 +1,190 @@
+c:\bin\x86\Debug\PYJ_WatchDog.exe
+c:\bin\x86\Debug\PYJ_WatchDog.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\MainWindow.baml
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\MainWindow.g.cs
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\App.g.cs
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog_MarkupCompile.cache
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.g.resources
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.Properties.Resources.resources
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.csproj.GenerateResource.Cache
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.csproj.CoreCompileInputs.cache
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.exe
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\PYJ_WatchDog.exe
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\PYJ_WatchDog.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Microsoft.Practices.ServiceLocation.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Microsoft.Practices.ServiceLocation.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.Unity.Wpf.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.Wpf.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Windows.Interactivity.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Microsoft.Practices.Unity.Configuration.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Microsoft.Practices.Unity.RegistrationByConvention.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Microsoft.Practices.Unity.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\MonitorWindow.baml
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\MonitorWindow.g.cs
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\log4net.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\MahApps.Metro.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\MahApps.Metro.pdb
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog_MarkupCompile.lref
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\App.baml
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Microsoft.AspNet.SignalR.Client.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Newtonsoft.Json.dll
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\Flyouts\AddTask.g.cs
+c:\users\administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\Flyouts\AddTask.baml
+C:\Users\Administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Styles\Label.baml
+C:\Users\Administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Styles\Button.baml
+C:\Users\Administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Styles\TextBox.baml
+C:\Users\Administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Styles\Colors.baml
+C:\Users\Administrator\documents\visual studio 2017\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Styles\Fonts.baml
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\WatchDog.exe.config
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\WatchDog.exe
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\WatchDog.pdb
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\CommonServiceLocator.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\ControlzEx.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\ControlzEx.pdb
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Windows.Interactivity.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Dragablz.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Dragablz.pdb
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\log4net.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\MahApps.Metro.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\MahApps.Metro.pdb
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\MaterialDesignColors.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\MaterialDesignThemes.Wpf.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\MaterialDesignThemes.Wpf.pdb
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.pdb
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.Unity.Wpf.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.Unity.Wpf.pdb
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.Wpf.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Prism.Wpf.pdb
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\ServiceStack.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\ServiceStack.Client.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\ServiceStack.Common.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\ServiceStack.Interfaces.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\ServiceStack.Text.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Buffers.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Memory.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Numerics.Vectors.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.CompilerServices.Unsafe.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.ValueTuple.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Unity.Abstractions.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Unity.Container.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\Microsoft.Win32.Primitives.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\netstandard.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.AppContext.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Collections.Concurrent.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Collections.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Collections.NonGeneric.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Collections.Specialized.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.ComponentModel.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.ComponentModel.EventBasedAsync.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.ComponentModel.Primitives.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.ComponentModel.TypeConverter.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Console.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Data.Common.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.Contracts.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.Debug.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.FileVersionInfo.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.Process.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.StackTrace.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.TextWriterTraceListener.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.Tools.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.TraceSource.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Diagnostics.Tracing.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Drawing.Primitives.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Dynamic.Runtime.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Globalization.Calendars.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Globalization.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Globalization.Extensions.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.Compression.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.Compression.ZipFile.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.FileSystem.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.FileSystem.DriveInfo.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.FileSystem.Primitives.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.FileSystem.Watcher.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.IsolatedStorage.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.MemoryMappedFiles.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.Pipes.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.IO.UnmanagedMemoryStream.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Linq.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Linq.Expressions.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Linq.Parallel.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Linq.Queryable.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.Http.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.NameResolution.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.NetworkInformation.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.Ping.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.Primitives.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.Requests.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.Security.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.Sockets.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.WebHeaderCollection.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.WebSockets.Client.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Net.WebSockets.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.ObjectModel.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Reflection.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Reflection.Extensions.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Reflection.Primitives.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Resources.Reader.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Resources.ResourceManager.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Resources.Writer.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.CompilerServices.VisualC.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.Extensions.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.Handles.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.InteropServices.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.InteropServices.RuntimeInformation.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.Numerics.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.Serialization.Formatters.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.Serialization.Json.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.Serialization.Primitives.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Runtime.Serialization.Xml.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Security.Claims.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Security.Cryptography.Algorithms.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Security.Cryptography.Csp.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Security.Cryptography.Encoding.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Security.Cryptography.Primitives.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Security.Cryptography.X509Certificates.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Security.Principal.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Security.SecureString.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Text.Encoding.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Text.Encoding.Extensions.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Text.RegularExpressions.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Threading.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Threading.Overlapped.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Threading.Tasks.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Threading.Tasks.Parallel.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Threading.Thread.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Threading.ThreadPool.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Threading.Timer.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Xml.ReaderWriter.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Xml.XDocument.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Xml.XmlDocument.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Xml.XmlSerializer.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Xml.XPath.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\bin\x86\Debug\System.Xml.XPath.XDocument.dll
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\WatchDog.exe.config
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\LogWindow.baml
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\SettingDialog.baml
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\TaskDialog.baml
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\LogWindow.g.cs
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\MainWindow.g.cs
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\MonitorWindow.g.cs
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\SettingDialog.g.cs
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\TaskDialog.g.cs
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\App.g.cs
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\GeneratedInternalTypeHelper.g.cs
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\WatchDog_MarkupCompile.cache
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\WatchDog_MarkupCompile.lref
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\App.baml
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\MainWindow.baml
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\Views\MonitorWindow.baml
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\WatchDog.g.resources
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.Properties.Resources.resources
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.csproj.GenerateResource.cache
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.csproj.CoreCompileInputs.cache
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\PYJ_WatchDog.csproj.CopyComplete
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\WatchDog.exe
+C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\x86\Debug\WatchDog.pdb

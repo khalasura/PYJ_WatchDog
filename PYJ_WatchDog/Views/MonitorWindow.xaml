@@ -1,0 +1,143 @@
+﻿<UserControl x:Class="PYJ_WatchDog.Views.MonitorWindow"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:prism="http://prismlibrary.com/"      
+             xmlns:wpf="http://materialdesigninxaml.net/winfx/xaml/themes"
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:i="http://schemas.microsoft.com/expression/2010/interactivity"
+             xmlns:controls="http://metro.mahapps.com/winfx/xaml/controls"
+             xmlns:common="clr-namespace:PYJ_WatchDog.Common"
+             xmlns:model="clr-namespace:PYJ_WatchDog.Models"
+             prism:ViewModelLocator.AutoWireViewModel="True"
+             mc:Ignorable="d" 
+             d:DesignWidth="500" d:DesignHeight="300"
+             d:DataContext="{d:DesignInstance {x:Type model:TaskInfo}}" >
+
+    <UserControl.Resources>
+        <Style x:Key="AccentCircleButtonStyle"
+                BasedOn="{StaticResource MaterialDesignFloatingActionLightButton}"
+                TargetType="{x:Type Button}">
+            <Setter Property="Foreground" Value="{DynamicResource AccentColorBrush}" />
+            <Setter Property="Background" Value="{DynamicResource IdealForegroundColorBrush}"/>
+            <Setter Property="BorderBrush" Value="{DynamicResource AccentColorBrush}" />
+            <Setter Property="wpf:ShadowAssist.ShadowDepth" Value="Depth1"/>
+            <Setter Property="Width" Value="30"/>
+            <Setter Property="Height" Value="30"/>
+            <Setter Property="Margin" Value="5 0 5 0"/>
+            <Setter Property="VerticalAlignment" Value="Bottom"/>
+            <Style.Triggers>
+                <Trigger Property="IsMouseOver" Value="True">
+                    <Setter Property="BorderBrush" Value="{DynamicResource AccentColorBrush2}" />
+                    <Setter Property="Foreground" Value="{DynamicResource ControlTextBrush}"/>
+                    <Setter Property="wpf:ShadowAssist.ShadowDepth" Value="Depth2"/>
+                </Trigger>
+                <Trigger Property="IsEnabled" Value="False">
+                    <Setter Property="wpf:ShadowAssist.ShadowDepth" Value="Depth0"/>
+                </Trigger>
+            </Style.Triggers>
+        </Style>
+    </UserControl.Resources>
+    <wpf:DialogHost Identifier="RootDialog">
+        <Grid>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="Auto" />
+                <RowDefinition Height="*" />
+            </Grid.RowDefinitions>
+            <StackPanel Orientation="Horizontal" Margin="6,1,1,1" HorizontalAlignment="Left">
+                <Button Content="{wpf:PackIcon Kind=ArrowExpandAll}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="전체 실행" Command="{Binding MenuCommand}" CommandParameter="AllRun"/>
+                <Button Content="{wpf:PackIcon Kind=ArrowCollapseAll}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="정체 정지" Command="{Binding MenuCommand}" CommandParameter="AllStop"/>
+                <GridSplitter Width="3" IsEnabled="False" Margin="10 0 10 0"/>
+                <Button Content="{wpf:PackIcon Kind=ArrowRightDropCircleOutline}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="선택 실행" Command="{Binding MenuCommand}" CommandParameter="Run"/>
+                <Button Content="{wpf:PackIcon Kind=StopCircleOutline}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="선택 정지" Command="{Binding MenuCommand}" CommandParameter="Stop"/>
+                <GridSplitter Width="3" IsEnabled="False" Margin="10 0 10 0"/>
+                <Button Content="{wpf:PackIcon Kind=EyeOutline}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="보이기" Command="{Binding MenuCommand}" CommandParameter="Show"/>
+                <Button Content="{wpf:PackIcon Kind=EyeOff}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="감추기" Command="{Binding MenuCommand}" CommandParameter="Hide"/>
+                <GridSplitter Width="3" IsEnabled="False" Margin="10 0 10 0"/>
+                <Button Content="{wpf:PackIcon Kind=CursorMove}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="위치설정" Command="{Binding MenuCommand}" CommandParameter="Pos"/>
+
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="1 1 6 1" HorizontalAlignment="Right">
+                <Button Content="{wpf:PackIcon Kind=Settings}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="설정" Command="{Binding MenuCommand}" CommandParameter="Setting"/>
+                <Button Content="{wpf:PackIcon Kind=PlusOutline}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="프로그램 추가" Command="{Binding MenuCommand}" CommandParameter="Add"/>
+                <Button Content="{wpf:PackIcon Kind=Minus}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="프로그램 삭제" Command="{Binding MenuCommand}" CommandParameter="Remove"/>
+            </StackPanel>
+            <DataGrid Grid.Row="1" Margin="3,10,0,0"
+            BorderThickness="1"
+            IsReadOnly="True"
+            CanUserAddRows="False"
+            SelectionMode="Single"
+            AutoGenerateColumns="False"
+            ItemsSource="{Binding TaskList}"
+            SelectedItem="{Binding SelTask}"
+            wpf:DataGridAssist.CellPadding="4" wpf:DataGridAssist.ColumnHeaderPadding="6"
+            FontSize="13">
+                <DataGrid.RowHeaderTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding RelativeSource={RelativeSource AncestorType=DataGridRow}, Path=Header}"/>
+                    </DataTemplate>
+                </DataGrid.RowHeaderTemplate>
+                <DataGrid.Columns>
+                    <DataGridTemplateColumn Header="상태" Width="Auto">
+                        <DataGridTemplateColumn.CellTemplate>
+                            <DataTemplate>
+                                <wpf:Card UniformCornerRadius="15" Padding="4" Background="{Binding IsRun, Converter={StaticResource RunStopColorConverter}}" Width="25" Height="25">
+                                    <!--<ProgressBar Style="{StaticResource MaterialDesignCircularProgressBar}" Value="0" IsIndeterminate="{Binding IsRun}" Foreground="White"/>-->
+                                </wpf:Card>
+                            </DataTemplate>
+                        </DataGridTemplateColumn.CellTemplate>
+                    </DataGridTemplateColumn>
+
+                    <DataGridTextColumn  
+                            Width="Auto"
+                            Binding="{Binding Path=Name}"
+                            Header="프로그램명" />
+                    <DataGridTextColumn 
+                            Width="Auto"
+                            Binding="{Binding Path=Desc}"
+                            Header="설명" />
+                    <DataGridTextColumn 
+                            Width="Auto"
+                            Binding="{Binding Path=MemorySize}"
+                            Header="메모리" />
+                    <DataGridTextColumn 
+                            Width="Auto"
+                            Binding="{Binding Path=IsResponse}"
+                            Header="응답" />
+                    <DataGridTextColumn 
+                            Width="Auto"
+                            Binding="{Binding Path=PID}"                            
+                            Header="PID" />
+                    <DataGridTextColumn 
+                            Visibility="Visible"
+                            Width="Auto"
+                            Binding="{Binding Path=X}"                            
+                            Header="X" />
+                    <DataGridTextColumn 
+                            Visibility="Visible"
+                            Width="Auto"
+                            Binding="{Binding Path=Y}"                            
+                            Header="Y" />
+                    <DataGridTextColumn 
+                            Visibility="Hidden"
+                            Width="Auto"
+                            Binding="{Binding Path=Width}"                            
+                            Header="W" />
+                    <DataGridTextColumn 
+                            Visibility="Hidden"
+                            Width="Auto"
+                            Binding="{Binding Path=Height}"                            
+                            Header="H" />
+                    <DataGridTextColumn 
+                            Width="Auto"
+                            Binding="{Binding Path=StartTime, StringFormat=\{0:yyyy-MM-dd HH:mm\}}"                            
+                            Header="시작시각" />
+                    <DataGridTextColumn 
+                            Width="*"
+                            Binding="{Binding Path=Node}"                            
+                            Header="노드명" />
+                </DataGrid.Columns>
+            </DataGrid>
+        </Grid>
+    </wpf:DialogHost>
+</UserControl>
