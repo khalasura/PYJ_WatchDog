@@ -124,10 +124,13 @@ namespace PYJ_WatchDog.Common
             //}
 
             // 응답이 없는 경우 프로그램 킬
-            if (task.IsRun && !task.IsResponse)
+            if (MyAppInfo.Instance().setting.KillNotRespond)
             {
-                var arg = KillProcess(task.Name);
-                OnResponseFail?.Invoke(arg);
+                if (task.IsRun && !task.IsResponse)
+                {
+                    var arg = KillProcess(task.Name);
+                    OnResponseFail?.Invoke(arg);
+                }
             }
 
             // 프로그램이 실행

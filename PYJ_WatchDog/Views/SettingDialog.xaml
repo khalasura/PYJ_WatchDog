@@ -45,6 +45,7 @@
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
                     <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
                 </Grid.RowDefinitions>
                 <Label Grid.Row="0" Content="자동 감시" />
                 <ToggleButton Grid.Row="0" Grid.Column="1" 
@@ -54,7 +55,11 @@
                     <TextBlock Text="{Binding Path=Setting.CheckTick, StringFormat='주기 ({0}초)'}"/>
                 </Label>
                 <Slider Grid.Row="1" Grid.Column="1" Value="{Binding Setting.CheckTick}" Maximum="20" Minimum="1" VerticalAlignment="Bottom" AutoToolTipPlacement="TopLeft" />
-                <Separator Grid.Row="2" Grid.ColumnSpan="2"/>
+                <Label Grid.Row="2" Content="응답 없음 반응" />
+                <ToggleButton Grid.Row="2" Grid.Column="1" 
+                              Style="{StaticResource MaterialDesignSwitchToggleButton}"
+                              IsChecked="{Binding Setting.KillNotRespond}" HorizontalAlignment="Left" VerticalAlignment="Bottom"/>
+                <Separator Grid.Row="3" Grid.ColumnSpan="3"/>
             </Grid>
 
             <StackPanel Orientation="Horizontal" Grid.Row="2" HorizontalAlignment="Center"
