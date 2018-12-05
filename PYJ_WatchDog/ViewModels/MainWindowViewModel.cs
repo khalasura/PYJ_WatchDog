@@ -81,9 +81,20 @@ namespace PYJ_WatchDog.ViewModels
             {
                 Log($"Kill: {s}", LogType.Normal);
             };
-            FileManager.OnResponseFail = (s1, s2) => 
+            FileManager.OnResponseFail = (s) => 
             {
-                Log($"응답없음 발생: {s1}, {s2}", LogType.Warning);
+                Log($"응답없음 발생: {s}", LogType.Warning);
+            };
+            FileManager.OnWerFault = (s) =>
+            {                
+                var find = MyAppInfo.Instance().setting.TaskList.FirstOrDefault(g => g.Name == s);
+                if (find != null)
+                {
+                    Log($"WerFault 발생: {s}", LogType.Warning);
+                    FileManager.KillProcess("WerFault");
+                    Task.Delay(300);
+                    FileManager.KillProcess(s);
+                }                    
             };
 
             #region 스레드

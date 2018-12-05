@@ -15,9 +15,10 @@ namespace PYJ_WatchDog.Common
     public static class FileManager
     {
         public static bool IsPosSetting = false;
-        public static Action<string, string> OnResponseFail;
-        public static Action<string> OnRunTask;
-        public static Action<string> OnKillTask;
+        public static Action<string> OnResponseFail;    // 응답 없음 발생
+        public static Action<string> OnRunTask;         // 프로그램 실행
+        public static Action<string> OnKillTask;        // 프로그램 강제종료
+        public static Action<string> OnWerFault;        // 윈도우 에러 리포팅 발생(WerFault)
 
         #region 윈도우메세지 상수
         public const int WM_SYSCOMMAND = 0x0112;
@@ -49,6 +50,7 @@ namespace PYJ_WatchDog.Common
         {
             try
             {
+                // 리스트에 등록된 프로세스 상태를 할당한다.
                 MyAppInfo.Instance().setting.TaskList.ToList().ForEach(g =>
                 {
                     var procs = Process.GetProcessesByName(g.Name);
@@ -71,6 +73,16 @@ namespace PYJ_WatchDog.Common
                         g.IsResponse = false;
                     }
                 });
+
+                // WerFault가 실행 되었는지 체크한다.
+                var wer = Process.GetProcessesByName("WerFault");
+                if (wer.Length > 0)
+                {
+                    var node = wer[0].MainWindowTitle;
+                    if (!string.IsNullOrEmpty(node))
+                        OnWerFault?.Invoke(node);
+                }
+                
             }
             catch (Exception)
             {
@@ -103,14 +115,21 @@ namespace PYJ_WatchDog.Common
         {
             ProcessStartInfo psi = new ProcessStartInfo();
             if (task == null) return string.Empty;
-            // 프로그램이 실행 중이지만 응답이 없는 경우 WerFault 킬 이후 해당 프로그램 킬.
+            //// 프로그램이 실행 중이지만 응답이 없는 경우 WerFault 킬 이후 해당 프로그램 킬.
+            //if (task.IsRun && !task.IsResponse)
+            //{
+            //    var arg1 = KillProcess("WerFault");
+            //    var arg2 = KillProcess(task.Name);
+            //    OnResponseFail?.Invoke(arg1, arg2);
+            //}
+
+            // 응답이 없는 경우 프로그램 킬
             if (task.IsRun && !task.IsResponse)
             {
-                var arg1 = KillProcess("WerFault");
-                var arg2 = KillProcess(task.Name);
-                OnResponseFail?.Invoke(arg1, arg2);
+                var arg = KillProcess(task.Name);
+                OnResponseFail?.Invoke(arg);
             }
-            
+
             // 프로그램이 실행
             if (!task.IsRun)
             {

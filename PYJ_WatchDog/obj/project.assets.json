@@ -1795,11 +1795,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\SISUSER\\Downloads\\PYJ_WatchDog\\PYJ_WatchDog\\PYJ_WatchDog.csproj",
+      "projectUniqueName": "C:\\Projects\\PYJ_WatchDog\\PYJ_WatchDog\\PYJ_WatchDog.csproj",
       "projectName": "PYJ_WatchDog",
-      "projectPath": "C:\\Users\\SISUSER\\Downloads\\PYJ_WatchDog\\PYJ_WatchDog\\PYJ_WatchDog.csproj",
+      "projectPath": "C:\\Projects\\PYJ_WatchDog\\PYJ_WatchDog\\PYJ_WatchDog.csproj",
       "packagesPath": "C:\\Users\\SISUSER\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\SISUSER\\Downloads\\PYJ_WatchDog\\PYJ_WatchDog\\obj\\",
+      "outputPath": "C:\\Projects\\PYJ_WatchDog\\PYJ_WatchDog\\obj\\",
       "projectStyle": "PackageReference",
       "skipContentFileWrite": true,
       "configFilePaths": [
