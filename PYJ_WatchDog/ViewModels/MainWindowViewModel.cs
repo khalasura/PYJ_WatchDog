@@ -69,6 +69,8 @@ namespace PYJ_WatchDog.ViewModels
             set { SetProperty(ref selName, value); }
         }
         public IEventAggregator _EventAggregator;
+
+        // 생성자
         public MainWindowViewModel(IEventAggregator eventAggregator)
         {            
             _EventAggregator = eventAggregator;
@@ -135,8 +137,10 @@ namespace PYJ_WatchDog.ViewModels
                         var sec = DateTime.Now - dtLastTime.Value;
                         if (sec.TotalSeconds >= MaxSec)
                         {
+                            // 죽이고
                             FileManager.KillProcess("WerFault");
                             await Task.Delay(1000);
+                            // 1초 뒤에 또 죽이고 (한번에 안 죽음)
                             FileManager.KillProcess("WerFault");
                             MyAppInfo.Instance().IsWerFault = false;
                             dtLastTime = null;
@@ -164,7 +168,7 @@ namespace PYJ_WatchDog.ViewModels
                     thisCtrl = e.Source as MainWindow;
                     thisCtrl.Closing += ThisCtrl_Closing;
                 }
-            }));
+            })); 
 
         // 폼 클로즈 이벤트
         private void ThisCtrl_Closing(object sender, System.ComponentModel.CancelEventArgs e)
