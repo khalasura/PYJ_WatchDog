@@ -382,4 +382,3 @@ C:\Users\SISUSER\Downloads\PYJ_WatchDog\PYJ_WatchDog\obj\Debug\PYJ_WatchDog.Prop
 C:\Users\SISUSER\Downloads\PYJ_WatchDog\PYJ_WatchDog\obj\Debug\PYJ_WatchDog.csproj.GenerateResource.cache
 C:\Users\SISUSER\Downloads\PYJ_WatchDog\PYJ_WatchDog\obj\Debug\PYJ_WatchDog.csproj.CoreCompileInputs.cache
 C:\Users\SISUSER\Downloads\PYJ_WatchDog\PYJ_WatchDog\obj\Debug\PYJ_WatchDog.csproj.CopyComplete
-C:\Projects\PYJ_WatchDog\PYJ_WatchDog\obj\Debug\PYJ_WatchDog.csprojAssemblyReference.cache

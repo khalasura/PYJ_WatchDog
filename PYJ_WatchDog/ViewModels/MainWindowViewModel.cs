@@ -135,13 +135,15 @@ namespace PYJ_WatchDog.ViewModels
                         var sec = DateTime.Now - dtLastTime.Value;
                         if (sec.TotalSeconds >= MaxSec)
                         {
-
                             FileManager.KillProcess("WerFault");
+                            await Task.Delay(1000);
+                            FileManager.KillProcess("WerFault");
+                            MyAppInfo.Instance().IsWerFault = false;
                             dtLastTime = null;
                         }
                         else
                         {
-                            Log($"WerFault 감지: {MaxSec - sec.TotalSeconds}초 후 Kill 합니다. ", LogType.Warning, false);
+                            Log($"WerFault 감지: {MaxSec - (int)sec.TotalSeconds}초 후 Kill 합니다. ", LogType.Warning, false);
                         }
                     }
 

@@ -38,6 +38,7 @@ namespace PYJ_WatchDog.ViewModels
             {
                 IsAuto = MyAppInfo.Instance().setting.IsAuto,
                 CheckTick = MyAppInfo.Instance().setting.CheckTick,
+                KillNotRespond = MyAppInfo.Instance().setting.KillNotRespond,
                 TaskList = MyAppInfo.Instance().setting.TaskList
             };
         }
