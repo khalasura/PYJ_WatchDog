@@ -18,7 +18,7 @@ namespace PYJ_WatchDog.Common
         public static Action<string> OnResponseFail;    // 응답 없음 발생
         public static Action<string> OnRunTask;         // 프로그램 실행
         public static Action<string> OnKillTask;        // 프로그램 강제종료
-        public static Action<string> OnWerFault;        // 윈도우 에러 리포팅 발생(WerFault)
+        public static Action OnWerFault;        // 윈도우 에러 리포팅 발생(WerFault)
 
         #region 윈도우메세지 상수
         public const int WM_SYSCOMMAND = 0x0112;
@@ -78,11 +78,17 @@ namespace PYJ_WatchDog.Common
                 var wer = Process.GetProcessesByName("WerFault");
                 if (wer.Length > 0)
                 {
-                    var node = wer[0].MainWindowTitle;
-                    if (!string.IsNullOrEmpty(node))
-                        OnWerFault?.Invoke(node);
+                    // 기존에 감지되지 않았다면 이벤트를 전송한다. (이벤트 한번만 전송하기 위함)
+                    if (!MyAppInfo.Instance().IsWerFault)
+                    {
+                        MyAppInfo.Instance().IsWerFault = true;
+                        OnWerFault?.Invoke();
+                    }                        
                 }
-                
+                else
+                    MyAppInfo.Instance().IsWerFault = false;
+
+
             }
             catch (Exception)
             {

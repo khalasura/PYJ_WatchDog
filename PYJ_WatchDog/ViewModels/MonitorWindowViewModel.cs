@@ -148,6 +148,7 @@ namespace PYJ_WatchDog.ViewModels
                             var setting = e.Parameter as Settings;
                             App.setting.IsAuto = setting.IsAuto;
                             App.setting.CheckTick = setting.CheckTick;
+                            App.setting.KillNotRespond = setting.KillNotRespond;
                             App.SaveSetting();
                         });
                         break;

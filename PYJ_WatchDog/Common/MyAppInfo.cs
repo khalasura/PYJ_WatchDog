@@ -24,6 +24,7 @@ namespace PYJ_WatchDog.Common
         public Settings setting { get; set; }
         public string SelName { get; set; }
         public int StxTick { get; set; }
+        public bool IsWerFault { get; set; }
 
         private MyAppInfo()
         {

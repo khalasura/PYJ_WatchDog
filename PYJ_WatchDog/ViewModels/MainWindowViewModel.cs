@@ -24,6 +24,9 @@ namespace PYJ_WatchDog.ViewModels
     {
         protected MainWindow thisCtrl;
         private MyAppInfo App;
+        //private bool IsWerFault = false;
+        private DateTime? dtLastTime;
+        private const int MaxSec = 10;
 
         private string _title = "WatchDog";
         public string Title
@@ -85,16 +88,11 @@ namespace PYJ_WatchDog.ViewModels
             {
                 Log($"응답없음 발생: {s}", LogType.Warning);
             };
-            FileManager.OnWerFault = (s) =>
-            {                
-                var find = MyAppInfo.Instance().setting.TaskList.FirstOrDefault(g => g.Name == s);
-                if (find != null)
-                {
-                    Log($"WerFault 발생: {s}", LogType.Warning);
-                    FileManager.KillProcess("WerFault");
-                    Task.Delay(300);
-                    FileManager.KillProcess(s);
-                }                    
+            FileManager.OnWerFault = () =>
+            {
+                dtLastTime = DateTime.Now;
+                Log($"WerFault 감지: {MaxSec}초 후 Kill 합니다. ", LogType.Warning, false);
+
             };
 
             #region 스레드
@@ -130,6 +128,22 @@ namespace PYJ_WatchDog.ViewModels
                     PbMax = App.setting.CheckTick;
                     IsAuto = App.setting.IsAuto;
                     SelName = App.SelName;
+
+                    // WerFault 제거
+                    if (MyAppInfo.Instance().IsWerFault && dtLastTime.HasValue)
+                    {
+                        var sec = DateTime.Now - dtLastTime.Value;
+                        if (sec.TotalSeconds >= MaxSec)
+                        {
+
+                            FileManager.KillProcess("WerFault");
+                            dtLastTime = null;
+                        }
+                        else
+                        {
+                            Log($"WerFault 감지: {MaxSec - sec.TotalSeconds}초 후 Kill 합니다. ", LogType.Warning, false);
+                        }
+                    }
 
                     // 스레드 지연시간
                     await Task.Delay(1000);
