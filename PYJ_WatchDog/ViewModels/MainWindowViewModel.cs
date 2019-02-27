@@ -73,6 +73,8 @@ namespace PYJ_WatchDog.ViewModels
         // 생성자
         public MainWindowViewModel(IEventAggregator eventAggregator)
         {            
+
+            // jhgiuhiuhiuh
             _EventAggregator = eventAggregator;
             App = MyAppInfo.Instance();
 
