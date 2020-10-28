@@ -1,1 +1,1 @@
-{"CheckTick":5,"IsAuto":true,"KillNotRespond":false,"TaskList":[]}
+{"CheckTick":5,"IsAuto":false,"KillNotRespond":false,"TaskList":[{"Name":"RemoteDesktopWPF","Desc":"RemoteDesktopWPF","FilePath":"C:\\SIS_Project (3차)\\99. 기타\\원격연결관리\\RemoteDesktopWPF.exe","MemorySize":"95,500 K","StartTime":"2020-10-28 오후 1:37:23","PID":"12176","IsResponse":true,"IsCheck":false,"IsRun":true,"Node":"PYJ Remote Desktop Protocol","X":162,"Y":214,"Width":390,"Height":322}]}

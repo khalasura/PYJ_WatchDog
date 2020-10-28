@@ -17,6 +17,7 @@ using System.Linq;
 using System.Threading;
 using System.Windows.Media;
 using Unity;
+using System.Windows.Threading;
 
 namespace PYJ_WatchDog.ViewModels
 {
@@ -27,6 +28,7 @@ namespace PYJ_WatchDog.ViewModels
         //private bool IsWerFault = false;
         private DateTime? dtLastTime;
         private const int MaxSec = 10;
+        private Dispatcher dispatcher;
 
         private string _title = "WatchDog";
         public string Title
@@ -72,12 +74,10 @@ namespace PYJ_WatchDog.ViewModels
 
         // 생성자
         public MainWindowViewModel(IEventAggregator eventAggregator)
-        {            
-
-            // jhgiuhiuhiuh
+        {
+            dispatcher = Application.Current.Dispatcher;
             _EventAggregator = eventAggregator;
             App = MyAppInfo.Instance();
-
             App.LoadSettings();
 
             FileManager.OnRunTask = (s) => 
@@ -100,63 +100,67 @@ namespace PYJ_WatchDog.ViewModels
             };
 
             #region 스레드
-            Task.Run(async () =>
+            dispatcher.Invoke(async () => 
             {
-                while (true)
+                await Task.Run(async () =>
                 {
-                    // 현재시각 표시
-                    CurrentTime = DateTime.Now;
-
-                    // 프로그램 상태 체크
-                    FileManager.TaskCheckAll();
-
-                    // 자동 실행
-                    if (App.setting.IsAuto)
+                    while (true)
                     {
-                        if (App.StxTick >= App.setting.CheckTick)
+                        // 현재시각 표시
+                        CurrentTime = DateTime.Now;
+
+                        // 프로그램 상태 체크
+                        FileManager.TaskCheckAll();
+
+                        // 자동 실행
+                        if (App.Setting.IsAuto)
                         {
+                            if (App.StxTick >= App.Setting.CheckTick)
+                            {
+                                App.StxTick = 0;
+                                FileManager.RunProcess();
+                            }
+                            else
+                                App.StxTick++;
+                        }
+                        else
                             App.StxTick = 0;
-                            FileManager.RunProcess();
-                        }
-                        else
-                            App.StxTick++;                              
-                    }
-                    else
-                        App.StxTick = 0;
 
-                    // 현재 정보 이벤트 게시
-                    _EventAggregator.GetEvent<SettingEvent>().Publish(MyAppInfo.Instance().setting);
+                        // 현재 정보 이벤트 게시
+                        _EventAggregator.GetEvent<SettingEvent>().Publish(MyAppInfo.Instance().Setting);
 
-                    // 프로그레스바
-                    PbVal = App.StxTick;
-                    PbMax = App.setting.CheckTick;
-                    IsAuto = App.setting.IsAuto;
-                    SelName = App.SelName;
+                        // 프로그레스바
+                        PbVal = App.StxTick;
+                        PbMax = App.Setting.CheckTick;
+                        IsAuto = App.Setting.IsAuto;
+                        SelName = App.SelName;
 
-                    // WerFault 제거
-                    if (MyAppInfo.Instance().IsWerFault && dtLastTime.HasValue)
-                    {
-                        var sec = DateTime.Now - dtLastTime.Value;
-                        if (sec.TotalSeconds >= MaxSec)
+                        // WerFault 제거
+                        if (MyAppInfo.Instance().IsWerFault && dtLastTime.HasValue)
                         {
-                            // 죽이고
-                            FileManager.KillProcess("WerFault");
-                            await Task.Delay(1000);
-                            // 1초 뒤에 또 죽이고 (한번에 안 죽음)
-                            FileManager.KillProcess("WerFault");
-                            MyAppInfo.Instance().IsWerFault = false;
-                            dtLastTime = null;
+                            var sec = DateTime.Now - dtLastTime.Value;
+                            if (sec.TotalSeconds >= MaxSec)
+                            {
+                                // 죽이고
+                                FileManager.KillProcess("WerFault");
+                                await Task.Delay(1000);
+                                // 1초 뒤에 또 죽이고 (한번에 안 죽음)
+                                FileManager.KillProcess("WerFault");
+                                MyAppInfo.Instance().IsWerFault = false;
+                                dtLastTime = null;
+                            }
+                            else
+                            {
+                                Log($"WerFault 감지: {MaxSec - (int)sec.TotalSeconds}초 후 Kill 합니다. ", LogType.Warning, false);
+                            }
                         }
-                        else
-                        {
-                            Log($"WerFault 감지: {MaxSec - (int)sec.TotalSeconds}초 후 Kill 합니다. ", LogType.Warning, false);
-                        }
-                    }
 
-                    // 스레드 지연시간
-                    await Task.Delay(1000);
-                }
+                        // 스레드 지연시간
+                        await Task.Delay(1000);
+                    }
+                });
             });
+            
             #endregion
         }
 

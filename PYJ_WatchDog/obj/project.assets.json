@@ -1500,10 +1500,11 @@
       ]
     },
     "ServiceStack/5.4.0": {
-      "sha512": "KnVcEmDjV15zqTp5IXVyYqfgAksG+1nT4mS/NnTvJFvnFp1eqjZ/qxuMn1Dqc1+WUHWFgVZdMJd+37FyGDH2Sg==",
+      "sha512": "2yV6KkrK11SH2xdCa6MSwFTiZE0afjp7UHMhCC0Ru39fWP/iN16UFCJtl6wqMEhtoeXdrg3OEO5POOM8TCNSyw==",
       "type": "package",
       "path": "servicestack/5.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/ServiceStack.dll",
         "lib/net45/ServiceStack.xml",
@@ -1514,10 +1515,11 @@
       ]
     },
     "ServiceStack.Client/5.4.0": {
-      "sha512": "xURGb5zVsEJ3/7fYU8AvZO/JPwV1uA3G2JL5CV+kT0N1JkW7z2/rIYd7Azm1iVf2S/MGklI2rzw64kagyyJjwA==",
+      "sha512": "QUAV2l2G8wund4LOBe8KgOW7qSGBPf8UTidGa/183l+u3UimRVP6UmsoeG3tE2OTn4PBHtz5AIGdSd8tvKeuRQ==",
       "type": "package",
       "path": "servicestack.client/5.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/ServiceStack.Client.dll",
         "lib/net45/ServiceStack.Client.xml",
@@ -1529,10 +1531,11 @@
       ]
     },
     "ServiceStack.Common/5.4.0": {
-      "sha512": "NgVuMxJH/+MP/0mf/T9wn8lhw2BNgf17/rdh34vG9cVBzCrkgE05gnk31hN8yGQuGVJJG4QzRPKRno2OVib9hw==",
+      "sha512": "sjd49YXvoffIu/QkTExD+u6k6Bf5W5MYE83rknTFA/lmh0YQcFiFoi6BqHsR2y2yTM9kIdrUlFatfsXDbwPgyw==",
       "type": "package",
       "path": "servicestack.common/5.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/ServiceStack.Common.dll",
         "lib/net45/ServiceStack.Common.xml",
@@ -1544,10 +1547,11 @@
       ]
     },
     "ServiceStack.Interfaces/5.4.0": {
-      "sha512": "9IxP5yGu1NyHlbkWEBDDnYUMSWXCAES7vW4CAKsIYzQxwoXoMlQc6ZpFTz6BQgCypQ1K2VG/uqpMPP9nxLVSbg==",
+      "sha512": "7nQdM1QAGnqtoPD3W+PJFZOmKSNHJiHJVCFSxuzsP29Xzuzw1xuM3IPPTpJ87SyxAt4PRKMVp3E2oEzGav54Fw==",
       "type": "package",
       "path": "servicestack.interfaces/5.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/ServiceStack.Interfaces.dll",
         "lib/net45/ServiceStack.Interfaces.xml",
@@ -1559,10 +1563,11 @@
       ]
     },
     "ServiceStack.Text/5.4.0": {
-      "sha512": "piyHU0ZdUkWhmyHdrfyOAdMdMiU/6YKDMSbzvx/8w9FvUUgY0bFemQjh2J/y9Gj6mA2XuATPADtOjzjnBipVfQ==",
+      "sha512": "N+8xYwi3ARlvyAej4mYAX9PXGyIRlkemU8Xk4A/R8IgCepS4TgjubXuJKZfh0zsJbrw850AHZftlFHlr1Cd+Zw==",
       "type": "package",
       "path": "servicestack.text/5.4.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "lib/net45/ServiceStack.Text.dll",
         "lib/net45/ServiceStack.Text.xml",
@@ -1577,7 +1582,7 @@
       ]
     },
     "System.Buffers/4.4.0": {
-      "sha512": "VCJfpWcYG1gT3WwivZWgT0KaqY678MQBvrOI2si6V8GHeQOtuW+wpiv5ss4KyfGG+cFFdPNaI+nw2/kExCtGgQ==",
+      "sha512": "AwarXzzoDwX6BgrhjoJsk6tUezZEozOT5Y9QKF94Gl4JK91I4PIIBkBco9068Y9/Dra8Dkbie99kXB8+1BaYKw==",
       "type": "package",
       "path": "system.buffers/4.4.0",
       "files": [
@@ -1602,7 +1607,7 @@
       ]
     },
     "System.Memory/4.5.1": {
-      "sha512": "oonnLQPZAGD21qtNMG4EtVmbYOInk2jV7M+g108B6OHOb67ZOaWnA/K8P5oQ6uK9wxKzB1iEXSChQOi2scKOqA==",
+      "sha512": "sDJYJpGtTgx+23Ayu5euxG5mAXWdkDb4+b0rD0Cab0M1oQS9H0HXGPriKcqpXuiJDTV7fTp/d+fMDJmnr6sNvA==",
       "type": "package",
       "path": "system.memory/4.5.1",
       "files": [
@@ -1627,7 +1632,7 @@
       ]
     },
     "System.Numerics.Vectors/4.4.0": {
-      "sha512": "ZhdgJiihSOGD325jClouHy8WSPtwFSj6K1OymoEyN0Wc9Y6X2OVxn65VKfTWHQOYM+QljlVSreporVNvZm8rEA==",
+      "sha512": "UiLzLW+Lw6HLed1Hcg+8jSRttrbuXv7DANVj0DkL9g6EnnzbL75EB7EWsw5uRbhxd/4YdG8li5XizGWepmG3PQ==",
       "type": "package",
       "path": "system.numerics.vectors/4.4.0",
       "files": [
@@ -1670,7 +1675,7 @@
       ]
     },
     "System.Runtime.CompilerServices.Unsafe/4.5.0": {
-      "sha512": "+XuFKlQaEBZXzJLGYXK2RWSif4doDGol46fJHHt1wwWQoHQHr0iwlmF76U2LlssIp3ZPJgCVVueY620y6JEhqw==",
+      "sha512": "YrzNWduCDHhUaSRBxHxL11UkM2fD6y8hITHis4/LbQZ6vj3vdRjoH3IoPWWC9uDXK2wHIqn+b5gv1Np/VKyM1g==",
       "type": "package",
       "path": "system.runtime.compilerservices.unsafe/4.5.0",
       "files": [
@@ -1697,7 +1702,7 @@
       ]
     },
     "System.ValueTuple/4.5.0": {
-      "sha512": "hSj6CqoOYTKB+j3V+UtFdxpZWUff/VuSWJ5VaIsyjg3/h5zVphvYs2jwMVCAJaYyjnddOOWJukgdPcPhFUNtPw==",
+      "sha512": "okurQJO6NRE/apDIP23ajJ0hpiNmJ+f0BwOlB/cSqTLQlw5upkf+5+96+iG2Jw40G1fCVCyPz/FhIABUjMR+RQ==",
       "type": "package",
       "path": "system.valuetuple/4.5.0",
       "files": [

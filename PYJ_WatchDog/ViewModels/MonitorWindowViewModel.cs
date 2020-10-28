@@ -38,12 +38,24 @@ namespace PYJ_WatchDog.ViewModels
             set { SetProperty(ref taskList, value); }
         }
 
+        private bool isAuto;
+        public bool IsAuto
+        {
+            get { return isAuto; }
+            set 
+            {
+                SetProperty(ref isAuto, value);
+                App.Setting.IsAuto = value;
+                App.SaveSetting();
+            }
+        }
+
         IEventAggregator _EventAggregator;
         public MonitorWindowViewModel(IEventAggregator eventAggregator)
         {
-            App = MyAppInfo.Instance();
+            App = MyAppInfo.Instance();            
+            IsAuto = App.Setting.IsAuto;
             FileManager.TaskCheckAll();
-            //this.TaskList = App.setting.TaskList;
 
             _EventAggregator = eventAggregator;
             _EventAggregator.GetEvent<SettingEvent>().Subscribe((e) =>
@@ -66,7 +78,6 @@ namespace PYJ_WatchDog.ViewModels
                             {
                                 FileManager.RunProcess();
                                 FileManager.TaskCheckAll();
-                                //_EventAggregator.GetEvent<SettingEvent>().Publish(App.setting);
                             }
                         });
                         break;
@@ -78,7 +89,6 @@ namespace PYJ_WatchDog.ViewModels
                                 FileManager.KillProcess();
                                 Thread.Sleep(200);
                                 FileManager.TaskCheckAll();
-                                //_EventAggregator.GetEvent<SettingEvent>().Publish(App.setting);
                             }
                         });
                         break;
@@ -92,10 +102,9 @@ namespace PYJ_WatchDog.ViewModels
                         {
                             if (yes)
                             {
-                                var task = App.setting.TaskList.FirstOrDefault(g => g.Name == App.SelName);
+                                var task = App.Setting.TaskList.FirstOrDefault(g => g.Name == App.SelName);
                                 FileManager.RunProcess(task);
                                 FileManager.TaskCheckAll();
-                                //_EventAggregator.GetEvent<SettingEvent>().Publish(App.setting);
                             }
                         });
                         break;
@@ -112,7 +121,6 @@ namespace PYJ_WatchDog.ViewModels
                                 FileManager.KillProcess(App.SelName);
                                 Thread.Sleep(200);
                                 FileManager.TaskCheckAll();
-                                //_EventAggregator.GetEvent<SettingEvent>().Publish(App.setting);
                             }
                         });
                         break;
@@ -121,21 +129,21 @@ namespace PYJ_WatchDog.ViewModels
                         {
                             if (e.Parameter == null) return;
                             var task = e.Parameter as TaskInfo;
-                            App.setting.TaskList.Add(task);
-                            this.TaskList = new ObservableCollection<TaskInfo>(App.setting.TaskList);
+                            App.Setting.TaskList.Add(task);
+                            this.TaskList = new ObservableCollection<TaskInfo>(App.Setting.TaskList);
                             App.SaveSetting();
                         });
                         break;
                     case "remove":
-                        var find = App.setting.TaskList.FirstOrDefault(g => g.Name == App.SelName);
+                        var find = App.Setting.TaskList.FirstOrDefault(g => g.Name == App.SelName);
                         if (find != null)
                         {
                             ShowMessageYesNoDialog("삭제", $"[{App.SelName}] 프로그램을 목록에서 삭제합니까?", yes =>
                             {
                                 if (yes)
                                 {
-                                    App.setting.TaskList.Remove(find);
-                                    this.TaskList = new ObservableCollection<TaskInfo>(App.setting.TaskList);
+                                    App.Setting.TaskList.Remove(find);
+                                    this.TaskList = new ObservableCollection<TaskInfo>(App.Setting.TaskList);
                                     App.SaveSetting();
                                 }
                             });
@@ -146,10 +154,11 @@ namespace PYJ_WatchDog.ViewModels
                         {
                             if (e.Parameter == null) return;
                             var setting = e.Parameter as Settings;
-                            App.setting.IsAuto = setting.IsAuto;
-                            App.setting.CheckTick = setting.CheckTick;
-                            App.setting.KillNotRespond = setting.KillNotRespond;
+                            App.Setting.IsAuto = setting.IsAuto;
+                            App.Setting.CheckTick = setting.CheckTick;
+                            App.Setting.KillNotRespond = setting.KillNotRespond;
                             App.SaveSetting();
+                            IsAuto = App.Setting.IsAuto;
                         });
                         break;
                     case "hide":

@@ -1,0 +1,31 @@
+{
+  "version": 2,
+  "dgSpecHash": "RjdAcxncsyAHv3ajetDa90tpauZIvOVzKJhtsh7GkjI1KNAyB2XP47NdAAmT5HBLS1D+9O+PNloCIZd3ZtFo+g==",
+  "success": true,
+  "projectFilePath": "C:\\Projects\\PYJ_WatchDog\\PYJ_WatchDog\\PYJ_WatchDog.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\SISUSER\\.nuget\\packages\\commonservicelocator\\2.0.4\\commonservicelocator.2.0.4.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\controlzex\\3.0.2.4\\controlzex.3.0.2.4.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\dragablz\\0.0.3.203\\dragablz.0.0.3.203.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\log4net\\2.0.8\\log4net.2.0.8.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\mahapps.metro\\1.6.5\\mahapps.metro.1.6.5.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\materialdesigncolors\\1.1.2\\materialdesigncolors.1.1.2.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\materialdesignthemes\\2.4.1.1101\\materialdesignthemes.2.4.1.1101.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\prism.core\\7.1.0.431\\prism.core.7.1.0.431.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\prism.unity\\7.1.0.431\\prism.unity.7.1.0.431.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\prism.wpf\\7.1.0.431\\prism.wpf.7.1.0.431.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\servicestack\\5.4.0\\servicestack.5.4.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\servicestack.client\\5.4.0\\servicestack.client.5.4.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\servicestack.common\\5.4.0\\servicestack.common.5.4.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\servicestack.interfaces\\5.4.0\\servicestack.interfaces.5.4.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\servicestack.text\\5.4.0\\servicestack.text.5.4.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\system.buffers\\4.4.0\\system.buffers.4.4.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\system.memory\\4.5.1\\system.memory.4.5.1.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\system.numerics.vectors\\4.4.0\\system.numerics.vectors.4.4.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\system.runtime.compilerservices.unsafe\\4.5.0\\system.runtime.compilerservices.unsafe.4.5.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\system.valuetuple\\4.5.0\\system.valuetuple.4.5.0.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\unity.abstractions\\3.3.1\\unity.abstractions.3.3.1.nupkg.sha512",
+    "C:\\Users\\SISUSER\\.nuget\\packages\\unity.container\\5.8.11\\unity.container.5.8.11.nupkg.sha512"
+  ],
+  "logs": []
+}

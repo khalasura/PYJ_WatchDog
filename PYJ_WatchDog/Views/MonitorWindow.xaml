@@ -11,7 +11,7 @@
              xmlns:model="clr-namespace:PYJ_WatchDog.Models"
              prism:ViewModelLocator.AutoWireViewModel="True"
              mc:Ignorable="d" 
-             d:DesignWidth="500" d:DesignHeight="300"
+             d:DesignWidth="600" d:DesignHeight="300"
              d:DataContext="{d:DesignInstance {x:Type model:TaskInfo}}" >
 
     <UserControl.Resources>
@@ -58,6 +58,9 @@
 
             </StackPanel>
             <StackPanel Orientation="Horizontal" Margin="1 1 6 1" HorizontalAlignment="Right">
+                <Label Content="자동감시" FontWeight="Bold" Foreground="{DynamicResource AccentColorBrush}"/>
+                <ToggleButton Style="{StaticResource MaterialDesignSwitchToggleButton}" Margin="0 0 10 0"
+                              IsChecked="{Binding IsAuto}" HorizontalAlignment="Left" VerticalAlignment="Center"/>
                 <Button Content="{wpf:PackIcon Kind=Settings}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="설정" Command="{Binding MenuCommand}" CommandParameter="Setting"/>
                 <Button Content="{wpf:PackIcon Kind=PlusOutline}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="프로그램 추가" Command="{Binding MenuCommand}" CommandParameter="Add"/>
                 <Button Content="{wpf:PackIcon Kind=Minus}" Style="{StaticResource AccentCircleButtonStyle}" ToolTip="프로그램 삭제" Command="{Binding MenuCommand}" CommandParameter="Remove"/>

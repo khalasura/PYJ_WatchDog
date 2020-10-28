@@ -58,3 +58,7 @@
 2018-12-05 13:45:04,243 WARN  - WerFault 감지: 2초 후 Kill 합니다. 
 2018-12-05 13:45:05,262 WARN  - WerFault 감지: 1초 후 Kill 합니다. 
 2018-12-05 13:45:06,289 DEBUG - Kill: WerFault
+2020-10-28 13:34:03,669 DEBUG - Run: RemoteDesktopWPF
+2020-10-28 13:34:15,790 DEBUG - Run: RemoteDesktopWPF
+2020-10-28 13:34:21,905 DEBUG - Run: RemoteDesktopWPF
+2020-10-28 13:37:23,828 DEBUG - Run: RemoteDesktopWPF

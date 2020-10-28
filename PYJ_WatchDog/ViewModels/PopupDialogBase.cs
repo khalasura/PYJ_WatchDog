@@ -36,10 +36,10 @@ namespace PYJ_WatchDog.ViewModels
             Task = new TaskInfo();
             Setting = new Settings
             {
-                IsAuto = MyAppInfo.Instance().setting.IsAuto,
-                CheckTick = MyAppInfo.Instance().setting.CheckTick,
-                KillNotRespond = MyAppInfo.Instance().setting.KillNotRespond,
-                TaskList = MyAppInfo.Instance().setting.TaskList
+                IsAuto = MyAppInfo.Instance().Setting.IsAuto,
+                CheckTick = MyAppInfo.Instance().Setting.CheckTick,
+                KillNotRespond = MyAppInfo.Instance().Setting.KillNotRespond,
+                TaskList = MyAppInfo.Instance().Setting.TaskList
             };
         }
     }

@@ -1,5 +1,6 @@
 ﻿using MahApps.Metro.Controls;
 using MahApps.Metro.Controls.Dialogs;
+using Prism.Mvvm;
 using PYJ_WatchDog.Models;
 using PYJ_WatchDog.ViewModels;
 using PYJ_WatchDog.Views;
@@ -16,12 +17,18 @@ using System.Windows.Media;
 
 namespace PYJ_WatchDog.Common
 {
-    public class MyAppInfo
+    public class MyAppInfo : BindableBase
     {
         private static MyAppInfo appInfo = null;        
         private string FilePath = System.IO.Path.GetDirectoryName(System.Reflection.Assembly.GetExecutingAssembly().Location) + @"\Settings.json";
 
-        public Settings setting { get; set; }
+        private Settings setting;
+        public Settings Setting
+        {
+            get { return setting; }
+            set { SetProperty(ref setting, value); }
+        }
+        //public Settings setting { get; set; }
         public string SelName { get; set; }
         public int StxTick { get; set; }
         public bool IsWerFault { get; set; }

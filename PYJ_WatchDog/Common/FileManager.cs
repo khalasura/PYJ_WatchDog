@@ -51,7 +51,7 @@ namespace PYJ_WatchDog.Common
             try
             {
                 // 리스트에 등록된 프로세스 상태를 할당한다.
-                MyAppInfo.Instance().setting.TaskList.ToList().ForEach(g =>
+                MyAppInfo.Instance().Setting.TaskList.ToList().ForEach(g =>
                 {
                     var procs = Process.GetProcessesByName(g.Name);
                     if (procs.Length > 0)
@@ -104,7 +104,7 @@ namespace PYJ_WatchDog.Common
         public static List<string> RunProcess()
         {
             List<string> arrResult = new List<string>();
-            MyAppInfo.Instance().setting.TaskList.ToList().ForEach(g =>
+            MyAppInfo.Instance().Setting.TaskList.ToList().ForEach(g =>
             {
                 RunProcess(g);
                 arrResult.Add(g.Name);
@@ -130,7 +130,7 @@ namespace PYJ_WatchDog.Common
             //}
 
             // 응답이 없는 경우 프로그램 킬
-            if (MyAppInfo.Instance().setting.KillNotRespond)
+            if (MyAppInfo.Instance().Setting.KillNotRespond)
             {
                 if (task.IsRun && !task.IsResponse)
                 {
@@ -139,7 +139,7 @@ namespace PYJ_WatchDog.Common
                 }
             }
 
-            // 프로그램이 실행
+            // 프로그램 실행
             if (!task.IsRun)
             {
                 psi.FileName = task.FilePath;
@@ -161,7 +161,7 @@ namespace PYJ_WatchDog.Common
         public static List<string> KillProcess()
         {
             List<string> arrResult = new List<string>();
-            MyAppInfo.Instance().setting.TaskList.ToList().ForEach(g =>
+            MyAppInfo.Instance().Setting.TaskList.ToList().ForEach(g =>
             {
                 KillProcess(g.Name);
                 arrResult.Add(g.Name);
