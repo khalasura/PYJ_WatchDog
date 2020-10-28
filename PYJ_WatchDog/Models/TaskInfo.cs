@@ -25,5 +25,7 @@ namespace PYJ_WatchDog.Models
         public int Width { get; set; }
         public int Height { get; set; }
 
+        public int Handle { get; set; }
+
     }
 }

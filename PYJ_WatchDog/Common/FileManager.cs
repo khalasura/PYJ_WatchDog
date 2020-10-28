@@ -34,13 +34,16 @@ namespace PYJ_WatchDog.Common
         [DllImport("user32.dll")]
         public static extern int SendMessage(int hWnd, uint Msg, int wParam, int lParam);
 
-        [DllImport("user32.dll")]
-        public static extern int FindWindow(string lpClassName, string NoteName);
+        //[DllImport("user32.dll")]
+        //public static extern int FindWindow(string lpClassName, string NoteName);
+
         [DllImport("user32.dll")]
         public static extern bool MoveWindow(int hWnd, int X, int Y, int nWidth, int nHeight, bool bRepaint);
-        [DllImport("user32.dll")]
 
+        [DllImport("user32.dll")]
         private static extern int GetWindowRect(int hwnd, out Rectangle rect);
+
+
         #endregion
 
         /// <summary>
@@ -62,6 +65,7 @@ namespace PYJ_WatchDog.Common
                         g.IsResponse = procs[0].Responding;
                         g.PID = procs[0].Id.ToString();
                         g.Node = string.IsNullOrEmpty(g.Node) ? procs[0].MainWindowTitle : g.Node;
+                        g.Handle = (int)procs[0].MainWindowHandle;
                         GetWindowStatus(g);
                     }
                     else
@@ -196,7 +200,9 @@ namespace PYJ_WatchDog.Common
         {
             if (task == null) return;
             if (task.Node == string.Empty) return;
-            var handle = FindWindow(null, task.Node);
+            //var handle = FindWindow(null, task.Node);
+            //var handle2 = OpenProcess(0x0200, false, int.Parse(task.PID));
+            var handle = task.Handle;
             SendMessage(handle, WM_SYSCOMMAND, SC_MINIMIZE, 0);
         }
 
@@ -208,7 +214,8 @@ namespace PYJ_WatchDog.Common
         {
             if (task == null) return;
             if (task.Node == string.Empty) return;
-            var handle = FindWindow(null, task.Node);
+            //var handle = FindWindow(null, task.Node);
+            var handle = task.Handle;
             //SendMessage(handle, WM_SYSCOMMAND, SC_MAXIMIZE, 0);
             SendMessage(handle, WM_SYSCOMMAND, SC_RESTORE, 0);
             MoveWindow(handle, task.X, task.Y, task.Width, task.Height, true);         
@@ -223,7 +230,7 @@ namespace PYJ_WatchDog.Common
             if (IsPosSetting) return;
             if (task == null) return;
             if (task.Node == string.Empty) return;
-            var handle = FindWindow(null, task.Node);
+            var handle = task.Handle;
             Rectangle rect;
             GetWindowRect(handle, out rect);
             if (rect.X == -32000 && rect.Y == -32000) return;
@@ -232,8 +239,6 @@ namespace PYJ_WatchDog.Common
             task.Y = rect.Y;
             task.Width = rect.Width - rect.X;
             task.Height = rect.Height - rect.Y;
-            //task.Width = rect.Width;
-            //task.Height = rect.Height;
         }
     }
 }

@@ -137,8 +137,8 @@
                             Header="시작시각" />
                     <DataGridTextColumn 
                             Width="*"
-                            Binding="{Binding Path=Node}"                            
-                            Header="노드명" />
+                            Binding="{Binding Path=Handle}"                            
+                            Header="핸들" />
                 </DataGrid.Columns>
             </DataGrid>
         </Grid>

@@ -180,10 +180,10 @@ namespace PYJ_WatchDog.ViewModels
                         dlg.Opacity = 0.5;
 
                         dlg.StartPosition = FormStartPosition.Manual;
-                        dlg.Left = Screen.PrimaryScreen.Bounds.Width;
-                        dlg.Top = Screen.PrimaryScreen.Bounds.Height;
+                        dlg.Width = Screen.AllScreens.Sum(g => g.Bounds.Width);
+                        dlg.Height = Screen.AllScreens.Sum(g => g.Bounds.Height);
                         dlg.Location = Screen.PrimaryScreen.Bounds.Location;
-                        dlg.WindowState = FormWindowState.Maximized;
+                        dlg.WindowState = FormWindowState.Normal;
 
                         if (dlg.ShowDialog() == DialogResult.OK)
                         {
