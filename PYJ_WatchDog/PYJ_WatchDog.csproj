@@ -175,7 +175,7 @@
     </PackageReference>
     <PackageReference Include="Prism.Unity" Version="7.1.0.431" />
     <PackageReference Include="ServiceStack">
-      <Version>5.4.0</Version>
+      <Version>5.9.2</Version>
     </PackageReference>
   </ItemGroup>
   <ItemGroup>
